@@ -1,6 +1,7 @@
 # backups
 *.bak
 *backups*
+*.lck
 
 # cache files
 fp-*cache

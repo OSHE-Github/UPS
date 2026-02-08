@@ -89,6 +89,36 @@
 				)
 			)
 		)
+		(pin "i2c_scl" input
+			(at 104.14 139.7 0)
+			(uuid "1a103b9c-666c-4d5b-a530-878de7b7769e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i2c_sda" input
+			(at 104.14 147.32 0)
+			(uuid "e3f98539-2d5a-4265-a8be-0c3fb06bc080")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "vbus" input
+			(at 104.14 153.67 0)
+			(uuid "89493819-1861-48f0-b902-1ab61aaa893b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c"
