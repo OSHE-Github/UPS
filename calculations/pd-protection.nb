@@ -1,0 +1,117 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4238,        109]
+NotebookOptionsPosition[      3567,         90]
+NotebookOutlinePosition[      3966,        106]
+CellTagsIndexPosition[      3923,        103]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "NTC", " ", "thermistor", " ", "calculations", " ", "for", " ", "PD", " ", 
+    "controller"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Rntc", " ", "=", 
+    RowBox[{"100000", 
+     RowBox[{"Exp", "[", 
+      RowBox[{"4480", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["1", "363.15"], "-", 
+         FractionBox["1", "298.15"]}], ")"}]}], "]"}]}]}], " ", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{
+      FractionBox["Rntc", 
+       RowBox[{"Rntc", "+", "Rpull"}]], "==", "0.09"}], ",", "Rpull"}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.97959120770247*^9, 3.979591208562667*^9}, {
+   3.979591241323927*^9, 3.979591287888399*^9}, {3.979591329829584*^9, 
+   3.9795913619740562`*^9}, {3.979591402563282*^9, 3.9795914028680773`*^9}, {
+   3.9795915344093943`*^9, 3.979591559234106*^9}, {3.979591674212515*^9, 
+   3.979591708199065*^9}, {3.979592057794941*^9, 3.9795920865336533`*^9}, {
+   3.9795922028305597`*^9, 3.9795922108172817`*^9}, 3.979592281882874*^9, {
+   3.9795923934736633`*^9, 3.97959244707194*^9}, {3.979592483149825*^9, 
+   3.979592500757023*^9}, {3.979592531016844*^9, 3.979592531427842*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"0b541470-e7ea-49cb-9d9a-7b7b8b04bfc7"],
+
+Cell[BoxData["6791.532580132803`"], "Output",
+ CellChangeTimes->{{3.979591354002904*^9, 3.979591362453624*^9}, 
+   3.979591406928424*^9, {3.979591536073827*^9, 3.9795915600766287`*^9}, {
+   3.97959167571767*^9, 3.9795917087463512`*^9}, {3.9795920746216307`*^9, 
+   3.979592077673561*^9}, 3.979592283520458*^9, {3.979592443244996*^9, 
+   3.979592447578546*^9}, {3.979592488857565*^9, 3.979592501280384*^9}, 
+   3.979592534921328*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"89196da0-7247-4961-ab7f-2c9f0c247485"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ratnz", 
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"", 2, 28, 16, 29651408678947927549, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.979592443245953*^9, 3.979592447579013*^9}, {
+   3.979592488858067*^9, 3.97959250128131*^9}, 3.979592534921754*^9},
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"52c1ee24-9356-4756-89e4-1cc23f91fc87"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"Rpull", "\[Rule]", "68669.9405324539`"}], "}"}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.979591354002904*^9, 3.979591362453624*^9}, 
+   3.979591406928424*^9, {3.979591536073827*^9, 3.9795915600766287`*^9}, {
+   3.97959167571767*^9, 3.9795917087463512`*^9}, {3.9795920746216307`*^9, 
+   3.979592077673561*^9}, 3.979592283520458*^9, {3.979592443244996*^9, 
+   3.979592447578546*^9}, {3.979592488857565*^9, 3.979592501280384*^9}, 
+   3.97959253492372*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"a082989d-3691-4ba5-ab43-50b87a78c5d5"]
+}, Open  ]]
+},
+WindowSize->{711, 755.25},
+WindowMargins->{{-2.25, Automatic}, {Automatic, -22.5}},
+FrontEndVersion->"14.1 for Linux x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1954c2d2-8892-4083-968a-6872c65f053b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 1319, 30, 103, "Input",ExpressionUUID->"0b541470-e7ea-49cb-9d9a-7b7b8b04bfc7"],
+Cell[1898, 54, 511, 7, 33, "Output",ExpressionUUID->"89196da0-7247-4961-ab7f-2c9f0c247485"],
+Cell[2412, 63, 546, 11, 45, "Message",ExpressionUUID->"52c1ee24-9356-4756-89e4-1cc23f91fc87"],
+Cell[2961, 76, 590, 11, 33, "Output",ExpressionUUID->"a082989d-3691-4ba5-ab43-50b87a78c5d5"]
+}, Open  ]]
+}
+]
+*)
+
