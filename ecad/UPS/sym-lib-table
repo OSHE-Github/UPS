@@ -1,6 +1,4 @@
 (sym_lib_table
   (version 7)
   (lib (name "UPS")(type "KiCad")(uri "${KIPRJMOD}/UPS.kicad_sym")(options "")(descr ""))
-  (lib (name "TPS61288")(type "KiCad")(uri "${KIPRJMOD}/TPS61288LRQQR.kicad_sym")(options "")(descr ""))
-  (lib (name "Indcutor")(type "KiCad")(uri "${KIPRJMOD}/ETQP8M4R7JFA.kicad_sym")(options "")(descr ""))
 )
