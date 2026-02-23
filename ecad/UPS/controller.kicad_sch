@@ -9369,7 +9369,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT_RG1_DIO"
+		(property "Footprint" "UPS:SOT_RG1_DIO"
 			(at 72.136 168.656 0)
 			(effects
 				(font
@@ -11286,7 +11286,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LQFP64-10x10mm"
+		(property "Footprint" "UPS:LQFP64-10x10mm"
 			(at 119.888 22.606 0)
 			(effects
 				(font
