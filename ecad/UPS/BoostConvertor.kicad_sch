@@ -3608,7 +3608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acc11f16-4145-4be5-8c26-48450c213b91")
-		(property "Reference" "4.7uH1"
+		(property "Reference" "L2"
 			(at 92.71 45.72 0)
 			(effects
 				(font
@@ -3616,7 +3616,7 @@
 				)
 			)
 		)
-		(property "Value" "ETQP8M4R7JFA"
+		(property "Value" "4.7uH"
 			(at 92.71 48.26 0)
 			(effects
 				(font
@@ -3624,7 +3624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ETQP8M4R7JFA:IND_ETQP8M4R7JFA"
+		(property "Footprint" "UPS:IND_ETQP8M4R7JFA"
 			(at 92.71 52.07 0)
 			(effects
 				(font
@@ -3791,7 +3791,7 @@
 		(instances
 			(project ""
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/66173f08-558e-4192-bd35-ba55c00529e3"
-					(reference "4.7uH1")
+					(reference "L2")
 					(unit 1)
 				)
 			)

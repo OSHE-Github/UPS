@@ -5762,12 +5762,6 @@
 		(uuid "a8e0bfa5-8ad3-4da8-8982-3d86f9c18f69")
 	)
 	(junction
-		(at 106.68 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ac992134-1521-4dfc-9d36-e9f49958f074")
-	)
-	(junction
 		(at 63.5 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5814,12 +5808,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d29f6cec-3724-42b4-a5c8-1a3dd9e7706f")
-	)
-	(junction
-		(at 106.68 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3a581ec-967d-4a08-ac7a-e5753e164b86")
 	)
 	(junction
 		(at 228.6 106.68)
@@ -6649,16 +6637,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 81.28) (xy 106.68 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84e59644-ed6b-4b3d-8ed7-cd52f5a67f92")
-	)
-	(wire
-		(pts
 			(xy 81.28 20.32) (xy 82.55 20.32)
 		)
 		(stroke
@@ -6969,6 +6947,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 78.74) (xy 106.68 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beac075c-3142-4a2b-8378-0725b5d22b87")
+	)
+	(wire
+		(pts
 			(xy 186.69 63.5) (xy 182.88 63.5)
 		)
 		(stroke
@@ -7116,6 +7104,16 @@
 			(type default)
 		)
 		(uuid "d7128861-b759-4226-a7be-2254f58d9d41")
+	)
+	(wire
+		(pts
+			(xy 99.06 81.28) (xy 106.68 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7ffb5e4-fd33-4ae0-b65d-d36d5f9f4ac2")
 	)
 	(wire
 		(pts
@@ -7269,26 +7267,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 78.74) (xy 106.68 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8e13035-d57a-4620-83c6-ae9b6d869202")
-	)
-	(wire
-		(pts
-			(xy 99.06 81.28) (xy 106.68 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed540bda-2d21-47a0-b725-4bd63b9ab3b3")
-	)
-	(wire
-		(pts
 			(xy 31.75 86.36) (xy 62.23 86.36)
 		)
 		(stroke
@@ -7386,16 +7364,6 @@
 			(type default)
 		)
 		(uuid "fa06db12-b535-4a7b-8314-6a5fa92b65a6")
-	)
-	(wire
-		(pts
-			(xy 107.95 78.74) (xy 106.68 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb50a7b6-16aa-4f61-ada0-9cda05fd2d13")
 	)
 	(wire
 		(pts
@@ -9036,7 +9004,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e3ebb6e-1905-4d7a-b7fa-8f8796e88df8")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0120"
 			(at 190.5 115.57 0)
 			(effects
 				(font
@@ -9091,7 +9059,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "#PWR?")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -9830,7 +9798,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6cbfa4da-ae8c-43a1-8891-45b5e77ce361")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0126"
 			(at 182.88 64.77 0)
 			(effects
 				(font
@@ -9885,7 +9853,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "#PWR?")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -10323,7 +10291,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b986aaa9-2c67-49e0-8501-201ef5914aea")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0112"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -10378,7 +10346,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "#PWR?")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -10495,7 +10463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc8dcfa6-8128-4558-a358-05659797f4f0")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0110"
 			(at 190.5 142.24 0)
 			(effects
 				(font
@@ -10550,7 +10518,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "#PWR?")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -10795,7 +10763,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d37cc505-1476-4c29-9a6a-c206e563de79")
-		(property "Reference" "J?"
+		(property "Reference" "J4"
 			(at 193.802 66.2432 0)
 			(effects
 				(font
@@ -10888,7 +10856,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "J?")
+					(reference "J4")
 					(unit 1)
 				)
 			)
