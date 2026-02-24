@@ -4131,6 +4131,36 @@
 		)
 		(uuid "ffd6c8a6-b535-43f7-a059-976c1b78eb7f")
 	)
+	(label "SDA"
+		(at 29.21 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "06f2fe9d-3854-4ec4-a7b5-c8908b2f45b2")
+	)
+	(label "CC2"
+		(at 217.17 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f88956c-9dd3-4110-91dc-bee80154a083")
+	)
+	(label "CC1"
+		(at 217.17 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f684def-c8d4-4f86-aee2-b68e3772eeee")
+	)
 	(label "D+"
 		(at 217.17 52.07 0)
 		(effects
@@ -4141,6 +4171,16 @@
 		)
 		(uuid "1f688aa5-7dcf-4324-a979-046cdc4b326b")
 	)
+	(label "SCL"
+		(at 29.21 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e0f1589-e29c-49c9-94bd-2509c743d5e4")
+	)
 	(label "D-"
 		(at 217.17 54.61 0)
 		(effects
@@ -4150,6 +4190,16 @@
 			(justify left bottom)
 		)
 		(uuid "7e069ee8-586d-4b71-90fc-3dec3e4d4eb9")
+	)
+	(label "VBUS"
+		(at 217.17 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc1472b5-344d-4356-aacb-14e5360076af")
 	)
 	(hierarchical_label "i2c_scl"
 		(shape input)
