@@ -4131,6 +4131,26 @@
 		)
 		(uuid "ffd6c8a6-b535-43f7-a059-976c1b78eb7f")
 	)
+	(label "D+"
+		(at 217.17 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f688aa5-7dcf-4324-a979-046cdc4b326b")
+	)
+	(label "D-"
+		(at 217.17 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e069ee8-586d-4b71-90fc-3dec3e4d4eb9")
+	)
 	(hierarchical_label "i2c_scl"
 		(shape input)
 		(at 22.86 62.23 180)
@@ -6694,7 +6714,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 118.11 27.178 90)
 			(effects
 				(font

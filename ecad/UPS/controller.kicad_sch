@@ -6135,6 +6135,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 121.92) (xy 106.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33d54fc8-e360-4ed6-b8b2-fc0199453dd2")
+	)
+	(wire
+		(pts
 			(xy 90.17 121.92) (xy 90.17 139.7)
 		)
 		(stroke
@@ -6382,6 +6392,16 @@
 			(type default)
 		)
 		(uuid "526adb4f-194d-4e07-b362-131ab6faa536")
+	)
+	(wire
+		(pts
+			(xy 100.33 124.46) (xy 106.68 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a901d3e-738c-4fad-8d5d-91e54ec1b840")
 	)
 	(wire
 		(pts
@@ -7045,6 +7065,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 127) (xy 106.68 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2ef3244-e865-412e-b046-a7074554e513")
+	)
+	(wire
+		(pts
 			(xy 157.48 106.68) (xy 180.34 106.68)
 		)
 		(stroke
@@ -7507,6 +7537,17 @@
 		)
 		(uuid "400e69da-5be2-445a-93d2-7035cec6648f")
 	)
+	(hierarchical_label "bat_th3"
+		(shape input)
+		(at 100.33 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "418681fa-f315-4ce8-8e30-76b80d8c0cf2")
+	)
 	(hierarchical_label "CMPIN"
 		(shape input)
 		(at 22.86 96.52 180)
@@ -7517,6 +7558,17 @@
 			(justify right)
 		)
 		(uuid "4ca1b756-71bb-4f77-badc-094ff89724b1")
+	)
+	(hierarchical_label "bat_th1"
+		(shape input)
+		(at 100.33 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "695fc1ea-7b59-484e-9f11-1199c747ef0b")
 	)
 	(hierarchical_label "cmp_out"
 		(shape input)
@@ -7541,7 +7593,7 @@
 		(uuid "9dc07952-dd2b-40ad-8572-5e5cca51f1f3")
 	)
 	(hierarchical_label "i2c_scl"
-		(shape input)
+		(shape bidirectional)
 		(at 39.37 104.14 180)
 		(effects
 			(font
@@ -7551,8 +7603,19 @@
 		)
 		(uuid "b11c94b0-762c-4e4a-afff-0b069928fa28")
 	)
-	(hierarchical_label "i2c_sda"
+	(hierarchical_label "bat_th2"
 		(shape input)
+		(at 100.33 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ba8b7e3f-98d0-42bb-9fc7-c3c4091f8686")
+	)
+	(hierarchical_label "i2c_sda"
+		(shape bidirectional)
 		(at 39.37 106.68 180)
 		(effects
 			(font
