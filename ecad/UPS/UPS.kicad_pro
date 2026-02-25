@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 3.35,
-          "width": 1.225
+          "height": 1.5,
+          "width": 1.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -188,6 +188,8 @@
       ],
       "track_widths": [
         0.0,
+        0.1778,
+        0.2032,
         0.254,
         0.381,
         0.508,
@@ -492,7 +494,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.25,
+        "clearance": 0.254,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -503,27 +505,20 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.254,
+        "via_diameter": 0.508,
+        "via_drill": 0.2032,
         "wire_width": 6
       },
       {
-        "bus_width": 12,
-        "clearance": 0.3,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "POWER",
+        "clearance": 0.1778,
+        "name": "USB_1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.0,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
+        "track_width": 0.3302,
+        "via_diameter": 0.508,
+        "via_drill": 0.2032
       }
     ],
     "meta": {
@@ -533,12 +528,8 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "POWER",
-        "pattern": "SW1"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "Charger_VBUS_IN"
+        "netclass": "USB_1",
+        "pattern": "D*"
       }
     ]
   },

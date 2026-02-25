@@ -4028,7 +4028,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS61288LRQQR:CONV_TPS61288LRQQR"
+		(property "Footprint" "UPS:CONV_TPS61288LRQQR"
 			(at 105.41 77.47 0)
 			(effects
 				(font
