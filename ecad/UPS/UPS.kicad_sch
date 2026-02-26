@@ -293,26 +293,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 158.75) (xy 147.32 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dc227c6-dec5-49cd-b0ee-fdd05e2f1735")
-	)
-	(wire
-		(pts
-			(xy 147.32 158.75) (xy 147.32 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eb9946f-7897-4dd5-9b0f-028af2f17539")
-	)
-	(wire
-		(pts
 			(xy 99.06 31.75) (xy 160.02 31.75)
 		)
 		(stroke
@@ -350,16 +330,6 @@
 			(type default)
 		)
 		(uuid "85755388-25c4-4d07-ac04-d9a455e0b476")
-	)
-	(wire
-		(pts
-			(xy 147.32 110.49) (xy 167.64 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "881b51c1-19dc-4f69-9495-35c791fa7272")
 	)
 	(wire
 		(pts
@@ -666,16 +636,6 @@
 		(pin "vsel1" output
 			(at 167.64 124.46 180)
 			(uuid "69e29fd7-ac9a-432e-a02e-92013cff919d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "vbat_sense" input
-			(at 167.64 110.49 180)
-			(uuid "4b69ee3c-e382-4219-9db9-9eee03e13a13")
 			(effects
 				(font
 					(size 1.27 1.27)

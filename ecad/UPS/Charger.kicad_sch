@@ -4336,6 +4336,12 @@
 		(uuid "a514dae1-fe55-42ea-9037-f49f6e33df1e")
 	)
 	(junction
+		(at 341.63 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a750de0d-8401-456c-997b-69d3609855a0")
+	)
+	(junction
 		(at 113.03 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5397,6 +5403,16 @@
 	)
 	(wire
 		(pts
+			(xy 341.63 85.09) (xy 341.63 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "636033e3-7b85-4719-a30a-9ce234f49f53")
+	)
+	(wire
+		(pts
 			(xy 238.76 124.46) (xy 266.7 124.46)
 		)
 		(stroke
@@ -5984,6 +6000,16 @@
 			(type default)
 		)
 		(uuid "a6ffbc05-0f0d-4532-acff-4e5f29675dfe")
+	)
+	(wire
+		(pts
+			(xy 341.63 85.09) (xy 350.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a74ba690-1b4d-4309-86c0-61ed8f574b5d")
 	)
 	(wire
 		(pts
@@ -6797,7 +6823,7 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 87.63) (xy 341.63 83.82)
+			(xy 341.63 87.63) (xy 341.63 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7501,6 +7527,17 @@
 			(justify right)
 		)
 		(uuid "c436b65f-e5d6-47aa-aea3-743ec536087e")
+	)
+	(hierarchical_label "VBAT_SENSE"
+		(shape input)
+		(at 350.52 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4cb4cd5-0c0d-41e6-af2e-e3fd44d4d005")
 	)
 	(symbol
 		(lib_id "UPS:1121")
@@ -13503,72 +13540,6 @@
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/58e8621a-e50a-4c31-8927-fd6b72ccb3ce"
 					(reference "B3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 161.29 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7611531-dddc-4b9b-854a-6831a79a25b8")
-		(property "Reference" "#PWR058"
-			(at 161.29 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 161.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 161.29 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25bd0bfd-f41e-42a8-9466-2207c96e26e6")
-		)
-		(instances
-			(project "UPS"
-				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/58e8621a-e50a-4c31-8927-fd6b72ccb3ce"
-					(reference "#PWR058")
 					(unit 1)
 				)
 			)
