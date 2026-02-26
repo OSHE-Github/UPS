@@ -11832,7 +11832,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Zener"
+		(property "Value" "6V"
 			(at 107.95 86.36 0)
 			(effects
 				(font

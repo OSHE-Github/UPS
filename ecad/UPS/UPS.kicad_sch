@@ -33,6 +33,26 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 143.51) (xy 148.59 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014e2282-7085-4c35-868c-35f5f2ee1d4e")
+	)
+	(wire
+		(pts
+			(xy 149.86 127) (xy 149.86 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fa1100-232e-496a-86f3-2a87f9abbef0")
+	)
+	(wire
+		(pts
 			(xy 160.02 31.75) (xy 160.02 142.24)
 		)
 		(stroke
@@ -83,6 +103,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 147.32) (xy 100.33 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17288af1-06c0-46a4-88b3-11534d11b145")
+	)
+	(wire
+		(pts
 			(xy 121.92 130.81) (xy 121.92 127)
 		)
 		(stroke
@@ -123,6 +153,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 124.46) (xy 167.64 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393efe63-e9bb-4070-b210-b261bed5e2cb")
+	)
+	(wire
+		(pts
 			(xy 100.33 127) (xy 121.92 127)
 		)
 		(stroke
@@ -140,6 +180,16 @@
 			(type default)
 		)
 		(uuid "394fd600-92e7-4bd3-9576-15eed6733017")
+	)
+	(wire
+		(pts
+			(xy 100.33 143.51) (xy 148.59 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cd0fa4b-9446-4246-9cfd-a6eb8adc07c6")
 	)
 	(wire
 		(pts
@@ -353,6 +403,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 127) (xy 149.86 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9bb05f1-be48-4f45-a044-93097f658f28")
+	)
+	(wire
+		(pts
 			(xy 142.24 80.01) (xy 142.24 133.35)
 		)
 		(stroke
@@ -556,6 +616,26 @@
 		(pin "i2c_sda" bidirectional
 			(at 167.64 130.81 180)
 			(uuid "24b9c3d7-730b-43da-bfc0-401f4847e797")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "vsel2" output
+			(at 167.64 127 180)
+			(uuid "43b3c21b-2c98-4482-998c-1931df513031")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "vsel1" output
+			(at 167.64 124.46 180)
+			(uuid "69e29fd7-ac9a-432e-a02e-92013cff919d")
 			(effects
 				(font
 					(size 1.27 1.27)
