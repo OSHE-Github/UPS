@@ -44,7 +44,7 @@
       "zones",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0fffffff_ffffffef",
+    "visible_layers": "00000000_00000000_0fffffff_ffffffeb",
     "zone_display_mode": 0
   },
   "git": {
@@ -87,18 +87,18 @@
       11
     ],
     "col_widths": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      535
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
