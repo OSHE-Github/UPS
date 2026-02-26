@@ -2229,8 +2229,8 @@
 		)
 		(uuid "7e3f18d8-f079-4835-9e57-3e3a86057c83")
 	)
-	(hierarchical_label "5v"
-		(shape input)
+	(hierarchical_label "vbus"
+		(shape output)
 		(at 203.2 71.12 0)
 		(effects
 			(font
@@ -2474,7 +2474,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1218_3246Metric_Pad1.22x4.75mm_HandSolder"
 			(at 55.88 50.292 90)
 			(effects
 				(font
@@ -2886,7 +2886,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-4_THT_Pad1.0mm"
 			(at 59.69 85.09 0)
 			(effects
 				(font
