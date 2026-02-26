@@ -767,7 +767,7 @@
 				(justify left)
 			)
 		)
-		(pin "5v" input
+		(pin "vbus" output
 			(at 170.18 80.01 180)
 			(uuid "8a170316-776f-4635-96bd-e197e4a036ca")
 			(effects

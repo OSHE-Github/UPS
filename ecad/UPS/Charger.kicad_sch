@@ -806,6 +806,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -4163,6 +4312,12 @@
 		(uuid "98f3f6e6-a42e-418a-a833-1c3cfc5babbe")
 	)
 	(junction
+		(at 111.76 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ac60f76-2215-4278-9e13-ce788d18440a")
+	)
+	(junction
 		(at 276.86 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4185,6 +4340,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af00f0f6-09f9-4234-befe-a2d5d928af97")
+	)
+	(junction
+		(at 120.65 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2593c08-faa1-4cd4-9e09-92e3e6f56bb8")
 	)
 	(junction
 		(at 303.53 69.85)
@@ -4215,12 +4376,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c16ea31c-2c1e-4fff-a8cc-0ddd7c689f41")
-	)
-	(junction
-		(at 111.76 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c40e5717-89b4-46ff-83a6-2d1165230335")
 	)
 	(junction
 		(at 341.63 87.63)
@@ -4293,12 +4448,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e43c5d65-7dca-4bac-9b85-1e8db94fa443")
-	)
-	(junction
-		(at 120.65 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e5a42870-5493-43a0-8aa4-9df3fdb7e94f")
 	)
 	(junction
 		(at 377.19 93.98)
@@ -5008,16 +5157,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 83.82) (xy 120.65 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44b70b1c-296d-4dab-899d-5958bee60354")
-	)
-	(wire
-		(pts
 			(xy 345.44 124.46) (xy 345.44 127)
 		)
 		(stroke
@@ -5155,16 +5294,6 @@
 			(type default)
 		)
 		(uuid "53ff4f90-0800-4331-bd40-f48532d924d5")
-	)
-	(wire
-		(pts
-			(xy 111.76 90.17) (xy 111.76 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54f52863-2656-4e38-83f0-bcb4312dada7")
 	)
 	(wire
 		(pts
@@ -6198,6 +6327,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 83.82) (xy 113.03 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc3b2da4-1590-43aa-b548-07f759dc6127")
+	)
+	(wire
+		(pts
 			(xy 345.44 93.98) (xy 345.44 99.06)
 		)
 		(stroke
@@ -6545,6 +6684,16 @@
 			(type default)
 		)
 		(uuid "ee0b2f5c-4520-4e9b-ba86-9da9d3793ec3")
+	)
+	(wire
+		(pts
+			(xy 111.76 83.82) (xy 111.76 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eee97556-0836-47bf-b544-299a7ece2da6")
 	)
 	(wire
 		(pts
@@ -11936,6 +12085,74 @@
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/58e8621a-e50a-4c31-8927-fd6b72ccb3ce"
 					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 116.84 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8cdb1739-bd14-4b87-8d3c-3de4f18c8c03")
+		(property "Reference" "F1"
+			(at 116.84 86.614 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTC 5.5A"
+			(at 116.84 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+			(at 121.92 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 116.84 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17a7986d-b8e0-4e31-988e-1ced425f9c13")
+		)
+		(pin "2"
+			(uuid "b2890834-9470-41ff-a6e2-bf3cef81b4e8")
+		)
+		(instances
+			(project ""
+				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/58e8621a-e50a-4c31-8927-fd6b72ccb3ce"
+					(reference "F1")
 					(unit 1)
 				)
 			)
