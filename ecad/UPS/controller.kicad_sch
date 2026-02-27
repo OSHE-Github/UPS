@@ -9029,7 +9029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ad6bbd9-4fd5-4587-ad05-260639deafa1")
-		(property "Reference" "C?"
+		(property "Reference" "C65"
 			(at 82.55 48.26 90)
 			(effects
 				(font
@@ -9087,7 +9087,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "C?")
+					(reference "C65")
 					(unit 1)
 				)
 			)
@@ -12472,7 +12472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff7fe4f4-0be0-4978-bb08-c953dfc3a695")
-		(property "Reference" "R?"
+		(property "Reference" "R42"
 			(at 92.7099 53.34 0)
 			(effects
 				(font
@@ -12532,7 +12532,7 @@
 			)
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "R?")
+					(reference "R42")
 					(unit 1)
 				)
 			)
