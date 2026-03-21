@@ -2,6 +2,8 @@
 *.bak
 *backups*
 *.lck
+*.lock
+~*
 *auto*save*
 *-bak
 
