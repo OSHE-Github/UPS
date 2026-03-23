@@ -2,7 +2,12 @@
 *.bak
 *backups*
 *.lck
+*.lock
+~*
 *auto*save*
+*-bak
 
 # cache files
 fp-*cache
+ecad/UPS/controller.csv
+/STM32CubeIDE/notes
