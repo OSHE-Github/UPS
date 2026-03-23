@@ -10,3 +10,4 @@
 # cache files
 fp-*cache
 ecad/UPS/controller.csv
+/STM32CubeIDE/notes
