@@ -32,6 +32,10 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+#define I2C_TIMEOUT_MS      100U
+#define I2C_SCAN_FIRST_ADDR 0x08U
+#define I2C_SCAN_LAST_ADDR  0x77U
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -44,6 +48,9 @@ I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
 
+uint8_t i2c_device_count = 0;
+uint32_t led_blink_delay_ms = 200;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -51,6 +58,10 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
+
+static HAL_StatusTypeDef I2C_WriteRegister(uint16_t dev_addr, uint8_t reg_addr, uint8_t value);
+static HAL_StatusTypeDef I2C_ReadRegister(uint16_t dev_addr, uint8_t reg_addr, uint8_t *value);
+static uint8_t I2C_ScanBus(void);
 
 /* USER CODE END PFP */
 
@@ -91,6 +102,17 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
+  i2c_device_count = I2C_ScanBus();
+  if (i2c_device_count > 0U)
+  {
+    led_blink_delay_ms = 800;
+  }
+
+  /* Example transactions left here for bring-up validation. */
+  uint8_t scratch_register = 0;
+  (void)I2C_WriteRegister(0x50U << 1, 0x00U, 0x00U);
+  (void)I2C_ReadRegister(0x50U << 1, 0x00U, &scratch_register);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -99,7 +121,7 @@ int main(void)
   {
 
 	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  HAL_Delay(200);
+	  HAL_Delay(led_blink_delay_ms);
 
     /* USER CODE END WHILE */
 
@@ -215,6 +237,31 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+static HAL_StatusTypeDef I2C_WriteRegister(uint16_t dev_addr, uint8_t reg_addr, uint8_t value)
+{
+  return HAL_I2C_Mem_Write(&hi2c1, dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, &value, 1U, I2C_TIMEOUT_MS);
+}
+
+static HAL_StatusTypeDef I2C_ReadRegister(uint16_t dev_addr, uint8_t reg_addr, uint8_t *value)
+{
+  return HAL_I2C_Mem_Read(&hi2c1, dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, value, 1U, I2C_TIMEOUT_MS);
+}
+
+static uint8_t I2C_ScanBus(void)
+{
+  uint8_t found = 0;
+
+  for (uint16_t address = I2C_SCAN_FIRST_ADDR; address <= I2C_SCAN_LAST_ADDR; address++)
+  {
+    if (HAL_I2C_IsDeviceReady(&hi2c1, address << 1, 3U, I2C_TIMEOUT_MS) == HAL_OK)
+    {
+      found++;
+    }
+  }
+
+  return found;
+}
 
 /* USER CODE END 4 */
 
