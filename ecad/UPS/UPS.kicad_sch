@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "9d92b60a-4a6b-449c-b462-cab19e69d38c")
 	(paper "A4")
 	(title_block
@@ -30,6 +30,26 @@
 			(type default)
 		)
 		(uuid "00caeb29-645a-4bf5-ab66-1ad4a78d852e")
+	)
+	(wire
+		(pts
+			(xy 148.59 143.51) (xy 148.59 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014e2282-7085-4c35-868c-35f5f2ee1d4e")
+	)
+	(wire
+		(pts
+			(xy 149.86 127) (xy 149.86 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fa1100-232e-496a-86f3-2a87f9abbef0")
 	)
 	(wire
 		(pts
@@ -83,6 +103,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 147.32) (xy 100.33 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17288af1-06c0-46a4-88b3-11534d11b145")
+	)
+	(wire
+		(pts
 			(xy 121.92 130.81) (xy 121.92 127)
 		)
 		(stroke
@@ -123,6 +153,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 124.46) (xy 167.64 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393efe63-e9bb-4070-b210-b261bed5e2cb")
+	)
+	(wire
+		(pts
 			(xy 100.33 127) (xy 121.92 127)
 		)
 		(stroke
@@ -140,6 +180,16 @@
 			(type default)
 		)
 		(uuid "394fd600-92e7-4bd3-9576-15eed6733017")
+	)
+	(wire
+		(pts
+			(xy 100.33 143.51) (xy 148.59 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cd0fa4b-9446-4246-9cfd-a6eb8adc07c6")
 	)
 	(wire
 		(pts
@@ -353,6 +403,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 127) (xy 149.86 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9bb05f1-be48-4f45-a044-93097f658f28")
+	)
+	(wire
+		(pts
 			(xy 142.24 80.01) (xy 142.24 133.35)
 		)
 		(stroke
@@ -434,11 +494,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1d606685-c4fd-4b8c-9a71-b1626d28c437")
 		(property "Sheetname" "controller"
 			(at 167.64 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -448,6 +510,8 @@
 		)
 		(property "Sheetfile" "controller.kicad_sch"
 			(at 167.64 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -457,6 +521,8 @@
 		)
 		(property "Field2" ""
 			(at 167.64 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -563,6 +629,26 @@
 				(justify left)
 			)
 		)
+		(pin "vsel2" output
+			(at 167.64 127 180)
+			(uuid "43b3c21b-2c98-4482-998c-1931df513031")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "vsel1" output
+			(at 167.64 124.46 180)
+			(uuid "69e29fd7-ac9a-432e-a02e-92013cff919d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c"
@@ -584,11 +670,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "58e8621a-e50a-4c31-8927-fd6b72ccb3ce")
 		(property "Sheetname" "Charger"
 			(at 25.4 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -598,6 +686,8 @@
 		)
 		(property "Sheetfile" "Charger.kicad_sch"
 			(at 25.4 88.2146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -736,11 +826,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "66173f08-558e-4192-bd35-ba55c00529e3")
 		(property "Sheetname" "BoostConvertor"
 			(at 170.18 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,6 +842,8 @@
 		)
 		(property "Sheetfile" "BoostConvertor.kicad_sch"
 			(at 170.18 87.7066 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -767,7 +861,7 @@
 				(justify left)
 			)
 		)
-		(pin "5v" input
+		(pin "vbus" output
 			(at 170.18 80.01 180)
 			(uuid "8a170316-776f-4635-96bd-e197e4a036ca")
 			(effects
@@ -798,11 +892,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "c2035c51-7de6-43a1-947f-d073f8318def")
 		(property "Sheetname" "Output"
 			(at 24.13 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -812,6 +908,8 @@
 		)
 		(property "Sheetfile" "UPSOutput.kicad_sch"
 			(at 24.13 161.8746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -821,6 +919,8 @@
 		)
 		(property "Field2" ""
 			(at 24.13 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
