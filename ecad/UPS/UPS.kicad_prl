@@ -6,9 +6,7 @@
     "hidden_netclasses": [
       "POWER"
     ],
-    "hidden_nets": [
-      "SW1"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -23,11 +21,11 @@
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
-      "graphics": false,
+      "graphics": true,
       "keepouts": true,
       "lockedItems": false,
       "otherItems": true,
-      "pads": false,
+      "pads": true,
       "text": true,
       "tracks": true,
       "vias": true,
@@ -39,7 +37,6 @@
       "ratsnest",
       "grid",
       "footprints_front",
-      "footprints_back",
       "footprint_values",
       "footprint_references",
       "tracks",
@@ -50,7 +47,7 @@
       "drc_warnings",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0fffffff_ffffffef",
+    "visible_layers": "00000000_00000000_0fffffff_ffffffab",
     "zone_display_mode": 0
   },
   "git": {

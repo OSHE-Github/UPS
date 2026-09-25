@@ -8083,7 +8083,7 @@
 		)
 		(uuid "ba8b7e3f-98d0-42bb-9fc7-c3c4091f8686")
 	)
-	(hierarchical_label "vbat_sense"
+	(hierarchical_label "VBAT_SENSE"
 		(shape input)
 		(at 77.47 58.42 180)
 		(effects
