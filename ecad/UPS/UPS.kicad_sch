@@ -16,6 +16,12 @@
 		(uuid "58cffe1d-ce2d-4c2f-a4c6-327f64b67a77")
 	)
 	(junction
+		(at 118.11 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba70425c-4484-440e-bc8f-51805134c393")
+	)
+	(junction
 		(at 121.92 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -40,6 +46,16 @@
 			(type default)
 		)
 		(uuid "014e2282-7085-4c35-868c-35f5f2ee1d4e")
+	)
+	(wire
+		(pts
+			(xy 100.33 157.48) (xy 118.11 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02fff15d-a2a9-4c35-a1a7-72ab2354f991")
 	)
 	(wire
 		(pts
@@ -243,6 +259,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 69.85) (xy 99.06 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e16f55b-dd85-49d3-ab44-c9507e395416")
+	)
+	(wire
+		(pts
 			(xy 99.06 48.26) (xy 129.54 48.26)
 		)
 		(stroke
@@ -363,6 +389,26 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 157.48) (xy 118.11 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905080a9-cc8a-4221-bbe6-4d1f892cdc5b")
+	)
+	(wire
+		(pts
+			(xy 118.11 110.49) (xy 118.11 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "982f15e4-e676-485f-9e58-df13de987a08")
+	)
+	(wire
+		(pts
 			(xy 114.3 74.93) (xy 114.3 146.05)
 		)
 		(stroke
@@ -420,6 +466,16 @@
 			(type default)
 		)
 		(uuid "d6321f9d-9b92-4969-9fed-47acd35309e9")
+	)
+	(wire
+		(pts
+			(xy 167.64 110.49) (xy 118.11 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db997daf-09f9-45e1-b722-6884e9882971")
 	)
 	(wire
 		(pts
@@ -649,6 +705,16 @@
 				(justify left)
 			)
 		)
+		(pin "VBAT_SENSE" input
+			(at 167.64 110.49 180)
+			(uuid "2c01dfe6-d16e-443c-b8ce-883612ee911d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c"
@@ -798,6 +864,16 @@
 		(pin "bat_th3" input
 			(at 99.06 85.09 0)
 			(uuid "09353626-fc3d-4c0d-925d-7d7beecf8dbc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBAT_SENSE" input
+			(at 99.06 69.85 0)
+			(uuid "0f8a6000-9303-4e32-81c3-b02fdd3ef8a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -957,16 +1033,6 @@
 				(justify right)
 			)
 		)
-		(pin "vbat_sense" input
-			(at 100.33 158.75 0)
-			(uuid "7ec79e14-5595-428d-ada2-ba6824456c31")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "vsel1" output
 			(at 100.33 143.51 0)
 			(uuid "72a062db-8611-48bd-8981-cd890ed30070")
@@ -980,6 +1046,16 @@
 		(pin "vsel2" output
 			(at 100.33 147.32 0)
 			(uuid "162b0db8-4396-4a47-b05a-6e5720532870")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "vbat_sense" input
+			(at 100.33 157.48 0)
+			(uuid "631738b2-6b92-44d4-a8a0-694543208b78")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -7680,7 +7680,7 @@
 			)
 			(justify left)
 		)
-		(uuid "f4cb4cd5-0c0d-41e6-af2e-e3fd44d4d005")
+		(uuid "d500a0d7-4f7e-48c8-aad3-af8fe8d69b16")
 	)
 	(symbol
 		(lib_id "Device:C")

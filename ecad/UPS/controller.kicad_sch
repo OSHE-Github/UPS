@@ -8050,6 +8050,17 @@
 		)
 		(uuid "78a5f056-3f3c-46fc-b89b-abcd0660c919")
 	)
+	(hierarchical_label "VBAT_SENSE"
+		(shape input)
+		(at 77.47 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8b1b62ab-3a34-4ae2-bd93-09dde6bc089d")
+	)
 	(hierarchical_label "chrg_ok"
 		(shape input)
 		(at 31.75 81.28 180)
@@ -8082,17 +8093,6 @@
 			(justify right)
 		)
 		(uuid "ba8b7e3f-98d0-42bb-9fc7-c3c4091f8686")
-	)
-	(hierarchical_label "VBAT_SENSE"
-		(shape input)
-		(at 77.47 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f264ef16-fdc6-404d-9404-c6c51b184483")
 	)
 	(hierarchical_label "i2c_sda"
 		(shape bidirectional)
