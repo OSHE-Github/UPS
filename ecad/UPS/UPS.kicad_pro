@@ -722,7 +722,7 @@
         "uuid": "9d92b60a-4a6b-449c-b462-cab19e69d38c"
       }
     ],
-    "used_designators": "J2,J5-6,#PWR2-4,C66-70",
+    "used_designators": "R43-44,J2,J5-7,D11,#PWR2-4,#PWR127-129,C66-70,Q8",
     "variants": []
   },
   "sheets": [

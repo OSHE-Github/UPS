@@ -1911,163 +1911,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L78L05_SOT89"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L78L05_SOT89"
-				(at -0.635 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf"
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Voltage Regulator 100mA Positive"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?89*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L78L05_SOT89_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "L78L05_SOT89_1_1"
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_DPDT_x2"
 			(pin_names
 				(offset 0)
@@ -3410,22 +3253,10 @@
 		)
 	)
 	(junction
-		(at 182.88 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "066d5d4c-9b49-400f-97c0-6e23f067033e")
-	)
-	(junction
 		(at 129.54 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c433912-c125-4834-b6a0-42e5e21a9424")
-	)
-	(junction
-		(at 198.12 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "13f081f4-97c1-4dd4-b818-157696db669a")
 	)
 	(junction
 		(at 237.49 85.09)
@@ -3450,12 +3281,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3229cc78-82c8-4820-bf84-c1bd86d4a90f")
-	)
-	(junction
-		(at 58.42 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "34555724-4691-4c2f-ad14-f2ae996ce925")
 	)
 	(junction
 		(at 228.6 52.07)
@@ -3566,22 +3391,16 @@
 		(uuid "bb1867b5-a2ef-49d4-9c09-442ef80d8ace")
 	)
 	(junction
-		(at 203.2 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc9c5905-906d-48a5-834f-8e50ed896bf4")
-	)
-	(junction
 		(at 224.79 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bcba242b-7e36-4906-81e8-f103adb8a2b7")
 	)
 	(junction
-		(at 182.88 68.58)
+		(at 58.42 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eb9ac94d-3d69-4803-a26f-2db656399c86")
+		(uuid "eca283f8-6218-488f-9854-82f669f067d5")
 	)
 	(junction
 		(at 144.78 102.87)
@@ -3631,16 +3450,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 182.88 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "086d9d6b-cc0e-44d3-9bb3-296479b1e4c3")
-	)
-	(wire
-		(pts
 			(xy 228.6 54.61) (xy 228.6 57.15)
 		)
 		(stroke
@@ -3651,7 +3460,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 87.63) (xy 92.71 95.25)
+			(xy 92.71 82.55) (xy 92.71 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3831,7 +3640,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 90.17) (xy 109.22 97.79)
+			(xy 111.76 85.09) (xy 111.76 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3851,7 +3660,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 85.09) (xy 109.22 85.09)
+			(xy 118.11 80.01) (xy 111.76 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3878,16 +3687,6 @@
 			(type default)
 		)
 		(uuid "433e759b-e112-4790-a625-8b61bde4f61f")
-	)
-	(wire
-		(pts
-			(xy 58.42 123.19) (xy 58.42 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4342b4cf-a71a-4bf4-a926-6ef49db24e70")
 	)
 	(wire
 		(pts
@@ -3991,16 +3790,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 81.28) (xy 203.2 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56bbc279-5785-430f-9492-7ac741c45f16")
-	)
-	(wire
-		(pts
 			(xy 148.59 59.69) (xy 148.59 90.17)
 		)
 		(stroke
@@ -4008,16 +3797,6 @@
 			(type default)
 		)
 		(uuid "5719e7d4-cfeb-46b8-968f-f9a6b50d385f")
-	)
-	(wire
-		(pts
-			(xy 58.42 102.87) (xy 58.42 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57b53dce-19fa-41f9-b2e3-1abffbeb2c16")
 	)
 	(wire
 		(pts
@@ -4041,7 +3820,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 90.17) (xy 118.11 85.09)
+			(xy 118.11 90.17) (xy 118.11 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4051,7 +3830,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 87.63) (xy 92.71 87.63)
+			(xy 101.6 82.55) (xy 92.71 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4101,7 +3880,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 102.87) (xy 87.63 102.87)
+			(xy 48.26 102.87) (xy 58.42 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4141,16 +3920,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 85.09) (xy 198.12 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d136ab-85e7-43a1-81d6-bf278d519d2f")
-	)
-	(wire
-		(pts
 			(xy 134.62 48.26) (xy 134.62 49.53)
 		)
 		(stroke
@@ -4171,7 +3940,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 97.79) (xy 113.03 97.79)
+			(xy 111.76 97.79) (xy 113.03 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4241,16 +4010,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 78.74) (xy 177.8 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b44dfff-1e06-4fd9-bf99-ce35cdddeda4")
-	)
-	(wire
-		(pts
 			(xy 134.62 74.93) (xy 129.54 74.93)
 		)
 		(stroke
@@ -4268,16 +4027,6 @@
 			(type default)
 		)
 		(uuid "7ca2769f-4b40-45af-840c-8651f5e5520d")
-	)
-	(wire
-		(pts
-			(xy 177.8 71.12) (xy 177.8 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cee580d-692e-46b2-8348-9023c0986d76")
 	)
 	(wire
 		(pts
@@ -4321,16 +4070,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 81.28) (xy 182.88 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88636eda-fe99-4f5f-9d5c-d46c8703e5b0")
-	)
-	(wire
-		(pts
 			(xy 182.88 54.61) (xy 228.6 54.61)
 		)
 		(stroke
@@ -4361,7 +4100,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 68.58) (xy 182.88 71.12)
+			(xy 182.88 54.61) (xy 182.88 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4411,7 +4150,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 78.74) (xy 198.12 81.28)
+			(xy 198.12 78.74) (xy 198.12 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4431,7 +4170,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 85.09) (xy 182.88 81.28)
+			(xy 182.88 78.74) (xy 182.88 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4468,6 +4207,26 @@
 			(type default)
 		)
 		(uuid "a1afdc4d-b711-4fd8-ad61-587885dc6979")
+	)
+	(wire
+		(pts
+			(xy 58.42 102.87) (xy 87.63 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2654788-dfba-475f-85df-d005624d91fb")
+	)
+	(wire
+		(pts
+			(xy 58.42 102.87) (xy 58.42 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a792a3d5-623a-4359-b5ed-03314a9ce5de")
 	)
 	(wire
 		(pts
@@ -4518,16 +4277,6 @@
 			(type default)
 		)
 		(uuid "b324ce40-50cd-43e0-8645-eb2b58fabd55")
-	)
-	(wire
-		(pts
-			(xy 203.2 71.12) (xy 203.2 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4b2c000-cf3e-4fa1-87e8-6cf7a8926f11")
 	)
 	(wire
 		(pts
@@ -4601,16 +4350,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 115.57) (xy 50.8 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c42ef634-3202-4a7f-bdea-a8d823910b20")
-	)
-	(wire
-		(pts
 			(xy 60.96 46.99) (xy 67.31 46.99)
 		)
 		(stroke
@@ -4618,26 +4357,6 @@
 			(type default)
 		)
 		(uuid "c7440512-5be8-4fb7-a330-8f29c483af7c")
-	)
-	(wire
-		(pts
-			(xy 177.8 81.28) (xy 182.88 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7814371-fa12-473d-871b-15587249db4e")
-	)
-	(wire
-		(pts
-			(xy 48.26 102.87) (xy 58.42 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c87e7dfc-82dd-403e-91fd-9edda256375e")
 	)
 	(wire
 		(pts
@@ -4658,16 +4377,6 @@
 			(type default)
 		)
 		(uuid "c94db1d7-b1b3-4e8e-bba3-ad8aecdbb6b4")
-	)
-	(wire
-		(pts
-			(xy 182.88 54.61) (xy 182.88 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb6d12cb-b009-4bd7-8b04-86915da86297")
 	)
 	(wire
 		(pts
@@ -4788,16 +4497,6 @@
 			(type default)
 		)
 		(uuid "e2825e15-5197-4731-b042-c7174e9a4af6")
-	)
-	(wire
-		(pts
-			(xy 198.12 81.28) (xy 203.2 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e98333ba-97c9-42b1-8544-802d8a89a96c")
 	)
 	(wire
 		(pts
@@ -5036,93 +4735,6 @@
 		(uuid "f7de6ded-799d-4ccf-b7e4-487b5010fecd")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 203.2 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00f7ec74-c648-4451-8bb4-1fe023ddc849")
-		(property "Reference" "C7"
-			(at 207.01 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1nF"
-			(at 207.01 76.1999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 204.1652 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 203.2 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "cfb56819-93ff-4af9-9a62-4ed43d624d39")
-		)
-		(pin "1"
-			(uuid "b5f80ce6-8912-46e3-a246-89e8a6cf0f85")
-		)
-		(instances
-			(project "UPSOutput"
-				(path "/917f3576-2b89-40c4-9175-933056884ccc"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "UPS"
-				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/c2035c51-7de6-43a1-947f-d073f8318def"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 66.04 29.21 0)
 		(unit 1)
@@ -5201,98 +4813,6 @@
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/c2035c51-7de6-43a1-947f-d073f8318def"
 					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L78L05_SOT89")
-		(at 58.42 115.57 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15c7c65e-c260-4834-875d-a9e9e7163fa3")
-		(property "Reference" "U3"
-			(at 62.23 114.2999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "L78L05_SOT89"
-			(at 62.23 116.8399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-			(at 63.5 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf"
-			(at 57.15 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89"
-			(at 58.42 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6a77f900-3ac7-4fc8-b8c1-276298424d9d")
-		)
-		(pin "1"
-			(uuid "a79a9c7b-c340-421c-b80f-89218f95a2e8")
-		)
-		(pin "3"
-			(uuid "08235aa7-17fe-4618-addd-755f10c0c246")
-		)
-		(instances
-			(project "UPSOutput"
-				(path "/917f3576-2b89-40c4-9175-933056884ccc"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-			(project "UPS"
-				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/c2035c51-7de6-43a1-947f-d073f8318def"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6869,7 +6389,8 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 92.71 100.33 270)
+		(at 92.71 100.33 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6877,7 +6398,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6c2960c3-81ed-4ef5-b01e-48e22fcffc44")
 		(property "Reference" "Q3"
 			(at 92.71 106.68 90)
@@ -6900,7 +6420,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 95.25 105.41 0)
+			(at 90.17 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8547,7 +8067,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
-		(at 104.14 87.63 0)
+		(at 106.68 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8558,7 +8078,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce6159d9-fe0a-4da0-b52e-7a615ed8ef7a")
 		(property "Reference" "SW3"
-			(at 104.14 78.74 0)
+			(at 106.68 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8568,7 +8088,7 @@
 			)
 		)
 		(property "Value" "SW_DPDT_x2"
-			(at 104.14 81.28 0)
+			(at 106.68 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8578,7 +8098,7 @@
 			)
 		)
 		(property "Footprint" "UPS:SW_EG1218"
-			(at 104.14 87.63 0)
+			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8589,7 +8109,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 87.63 0)
+			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8600,7 +8120,7 @@
 			)
 		)
 		(property "Description" "Switch, dual pole double throw, separate symbols"
-			(at 104.14 87.63 0)
+			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8718,95 +8238,6 @@
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/c2035c51-7de6-43a1-947f-d073f8318def"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 177.8 74.93 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d980b492-aad4-4914-9470-0361c993f38f")
-		(property "Reference" "C8"
-			(at 173.99 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1nF"
-			(at 173.99 76.1999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 176.8348 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 177.8 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "cddc7e07-1be8-4009-b3c8-ba9fe9ed67bd")
-		)
-		(pin "1"
-			(uuid "d3b07bbe-df05-403d-ab61-166b6937bb36")
-		)
-		(instances
-			(project "UPSOutput"
-				(path "/917f3576-2b89-40c4-9175-933056884ccc"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "UPS"
-				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/c2035c51-7de6-43a1-947f-d073f8318def"
-					(reference "C8")
 					(unit 1)
 				)
 			)
