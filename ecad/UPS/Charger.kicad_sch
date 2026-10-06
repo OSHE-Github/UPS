@@ -7240,7 +7240,7 @@
 	)
 	(global_label "REGN"
 		(shape input)
-		(at 257.81 152.4 90)
+		(at 257.81 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7250,7 +7250,7 @@
 		)
 		(uuid "8d779e7f-8963-4de4-8a97-aa9645c1afe1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.81 144.3953 90)
+			(at 265.8147 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8536,15 +8536,14 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 146.05 242.5699 90)
+		(property "Value" "GND"
+			(at 148.59 238.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -9878,7 +9877,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
+		(property "Value" "GND"
 			(at 102.87 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11833,14 +11832,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 260.35 201.93 0)
+		(property "Value" "GND"
+			(at 262.89 198.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -13266,14 +13266,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 243.84 203.2 0)
+		(property "Value" "GND"
+			(at 246.38 199.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15012,15 +15013,14 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 102.87 177.7999 90)
+		(property "Value" "GND"
+			(at 105.41 173.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -15975,14 +15975,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 250.19 201.93 0)
+		(property "Value" "GND"
+			(at 252.73 198.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -16853,7 +16854,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
+		(property "Value" "GND"
 			(at 273.05 203.2 0)
 			(show_name no)
 			(do_not_autoplace no)
