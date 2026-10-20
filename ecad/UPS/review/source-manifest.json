@@ -1,0 +1,46 @@
+[
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\_autosave-UPS.kicad_pcb",
+    "Hash": "EEF80AAA15DC7AC29E4A13169973713DE3A6D0438ACB29FE9550645636263032"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\BoostConvertor.kicad_sch",
+    "Hash": "C40523B11FF3201CC7242DBA0D29149A02E49CF65304528BE160D363D6970EBF"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\Charger.kicad_sch",
+    "Hash": "B90866F20D49BF283DF2FB0033C8E867652434AB3571A888437C928E2D624451"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\controller.kicad_sch",
+    "Hash": "50AD7F476F60BA08E68178CDF0F4EB5E4479E037602EE24AEF73C93862050774"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\fp-lib-table",
+    "Hash": "C7030745657D6AC5B5DD5CF324848E0AE122BF57B27A6B75C43F163CD34EE489"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\sym-lib-table",
+    "Hash": "D6C0158FA1A82F8B522D7290C07B6763CE7DDAC78D90434955DAD5EA65B998BB"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\UPS.kicad_pcb",
+    "Hash": "89673B699716EA55F3FCA5AB3F32C7C74B656EF76EF07D15FD0CC36205A2E052"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\UPS.kicad_pro",
+    "Hash": "48742B061C67011978B2CE423B59756BFD779D559BE21D6BFCD74E97A86A216B"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\UPS.kicad_sch",
+    "Hash": "423FF4EBFC65119F5E7CC236FFD572D4E36B0CCADBD90138BF08FE625D15D45B"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\UPS.kicad_sym",
+    "Hash": "A964AAB50C6950205221EDCEFFC16D1669C91B25DD332978DDB44BD23BD6F6D7"
+  },
+  {
+    "Path": "C:\\Users\\john\\OneDrive\\Documents\\GitHub\\UPS\\ecad\\UPS\\UPSOutput.kicad_sch",
+    "Hash": "D264DBAEED6685D94DF9339846E8C2F609CC6DF06F399A814F44B6C9366F2985"
+  }
+]

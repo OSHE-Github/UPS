@@ -1,0 +1,8 @@
+*.kicad_prl
+*.lck
+_autosave-*
+review/build-stdout.txt
+review/build-stderr.txt
+review/finalize-stdout.txt
+review/finalize-stderr.txt
+review/cleanup-stdout.txt

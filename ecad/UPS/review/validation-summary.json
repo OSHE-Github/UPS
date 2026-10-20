@@ -1,0 +1,60 @@
+{
+  "status": "PLACEMENT CHECKS PASS; ROUTING AND ELECTRICAL REVIEW STILL REQUIRED",
+  "native_checks": {
+    "shorting_items": 0,
+    "clearance": 0,
+    "courtyards_overlap": 0,
+    "hole_clearance": 0,
+    "hole_to_hole": 0,
+    "npth_inside_courtyard": 0,
+    "pth_inside_courtyard": 0,
+    "items_not_allowed": 0,
+    "copper_edge_clearance": 0
+  },
+  "schematic_parity_issues": 0,
+  "electrical_topology_matches_source": true,
+  "source_base_preserved_in_git": "f5ad96ca7c6ce8b75538aafb6f14a27db1c61da7",
+  "source_project_settings_preserved": true,
+  "footprints": 173,
+  "retained_or_translated_tracks_and_vias": 275,
+  "unconnected_items": 232,
+  "remaining_drc": {
+    "lib_footprint_mismatch": 44,
+    "malformed_courtyard": 4,
+    "silk_edge_clearance": 6,
+    "silk_over_copper": 70,
+    "silk_overlap": 61,
+    "starved_thermal": 11,
+    "text_height": 5,
+    "track_dangling": 22,
+    "via_dangling": 4
+  },
+  "pi_hole_spacing_mm": [
+    58,
+    49
+  ],
+  "pi_mount_holes_mm": [
+    [
+      83.5,
+      103
+    ],
+    [
+      141.5,
+      103
+    ],
+    [
+      83.5,
+      152
+    ],
+    [
+      141.5,
+      152
+    ]
+  ],
+  "bottom_components": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ]
+}

@@ -1,5 +1,5 @@
 (sym_lib_table
-	(version 7)
-	(lib (name "UPS") (type "KiCad") (uri "${KIPRJMOD}/UPS.kicad_sym") (options "") (descr ""))
-	(lib (name "PJ-002AH") (type "KiCad") (uri "C:/Users/tblaz/Downloads/PJ-002AH/PJ-002AH.kicad_sym") (options "") (descr ""))
+ (version 7)
+ (lib (name "UPS")(type "KiCad")(uri "${KIPRJMOD}/UPS.kicad_sym")(options "")(descr ""))
+ (lib (name "PJ-002AH")(type "KiCad")(uri "${KIPRJMOD}/PJ-002AH.kicad_sym")(options "")(descr ""))
 )

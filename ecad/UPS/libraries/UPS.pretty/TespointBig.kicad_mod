@@ -1,0 +1,143 @@
+(footprint "TespointBig"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a7d42ced-c539-40d6-8a38-7c57cc212945")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "GNDTest"
+		(at 1.2125 8.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "99e7d724-e761-4ebc-8bb3-90dd1e591329")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4ce6f85c-8500-40d3-8f0d-b744c6b7221c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "test point"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9eb8bd11-662c-4993-a269-da72866cbad2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Pin* Test*")
+	(sheetname "/BoostConvertor/")
+	(sheetfile "BoostConvertor.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.2 0.4)
+		(end 2.2 4.2)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f6e369fd-bc7b-433e-848f-3eb4ce83ed9c")
+	)
+	(fp_line
+		(start -3.4 4.4)
+		(end -3.4 0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bbc0a1ae-c792-42b9-bc5b-f3ae10cc0bc7")
+	)
+	(fp_line
+		(start -3.25 0.2)
+		(end 2.4 0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2e76e6d8-d39b-4c38-afc1-c48eea573d59")
+	)
+	(fp_line
+		(start 2.4 0.2)
+		(end 2.4 4.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "82c3b0c0-8e1e-441b-ab5f-884c095e9fdf")
+	)
+	(fp_line
+		(start 2.4 4.4)
+		(end -3.4 4.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9d01c516-ff99-478e-9aae-a53a82a1ac14")
+	)
+	(fp_rect
+		(start -1.7 1.8)
+		(end 1 2.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9d5e7d1c-d5dc-479f-8228-acf16150ccfc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9fa4ffb8-94ba-4f1c-a5d4-8ba97f465589")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.5 2.3)
+		(size 5 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1388888889)
+		(uuid "8fce5b3e-e829-4901-8ef6-b94f502840b5")
+	)
+	(embedded_fonts no)
+)

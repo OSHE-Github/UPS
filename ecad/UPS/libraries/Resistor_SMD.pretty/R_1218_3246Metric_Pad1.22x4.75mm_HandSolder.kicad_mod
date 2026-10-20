@@ -1,0 +1,138 @@
+(footprint "R_1218_3246Metric_Pad1.22x4.75mm_HandSolder"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 1218 (3246 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20035/dcrcwe3.pdf), generated with kicad-footprint-generator")
+	(tags "resistor handsolder")
+	(property "Reference" "REF**"
+		(at 0 -3.33 180)
+		(layer "F.SilkS")
+		(uuid "47104564-c5f2-4ed4-b7b8-ab5f8755ecac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "0"
+		(at 0 3.33 180)
+		(layer "F.Fab")
+		(uuid "717b0bb3-bb3d-4d6e-bce8-55b07cd47cf7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c7720b8-b864-43e1-8a8b-fac8855dfc2c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Resistor"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "44c3ca06-a554-4a90-ae60-2232fefb3396")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "R_*")
+	(sheetname "/BoostConvertor/")
+	(sheetfile "BoostConvertor.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.777064 -2.41)
+		(end 0.777064 -2.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2bf96b69-5c6d-45ae-b426-13071b8e3520")
+	)
+	(fp_line
+		(start -0.777064 2.41)
+		(end 0.777064 2.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cbc7db1a-67ad-4831-8239-3ec3155931a6")
+	)
+	(fp_rect
+		(start -2.43 -2.63)
+		(end 2.43 2.63)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "43dcbb50-22b3-4eb7-9872-f9eda8403438")
+	)
+	(fp_rect
+		(start -1.6 -2.3)
+		(end 1.6 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0bd98f08-5efc-4486-9553-269d14e97179")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "5590e231-8492-48cd-8468-6c94530071bf")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.5625 0)
+		(size 1.225 4.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.204082)
+		(uuid "c0682678-6514-4623-9431-c8d9d281853b")
+	)
+	(pad "2" smd roundrect
+		(at 1.5625 0)
+		(size 1.225 4.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.204082)
+		(uuid "9968408f-302c-4705-bedd-90ac78a516c7")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1218_3246Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
