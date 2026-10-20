@@ -8,6 +8,193 @@
 		(title "controller")
 	)
 	(lib_symbols
+(symbol "Connector_Generic:Conn_01x03"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x03_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -7623,16 +7810,7 @@
 		)
 		(uuid "759966b3-1dbd-4037-9996-54b0f661c8de")
 	)
-	(wire
-		(pts
-			(xy 78.74 58.42) (xy 78.74 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75cc0603-f318-44ae-988c-8834aace593b")
-	)
+
 	(wire
 		(pts
 			(xy 228.6 120.65) (xy 228.6 124.46)
@@ -7723,16 +7901,7 @@
 		)
 		(uuid "7f478cd4-094e-443e-99a5-73f2fe7bceee")
 	)
-	(wire
-		(pts
-			(xy 97.79 55.88) (xy 106.68 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f689067-b30b-427a-9844-b0a064707463")
-	)
+
 	(wire
 		(pts
 			(xy 219.71 48.26) (xy 219.71 53.34)
@@ -8193,16 +8362,7 @@
 		)
 		(uuid "b8ccf918-9649-46e7-a079-4d738a51d232")
 	)
-	(wire
-		(pts
-			(xy 86.36 55.88) (xy 90.17 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b92c94b7-388f-4fee-aff3-843c09a73972")
-	)
+
 	(wire
 		(pts
 			(xy 218.44 120.65) (xy 228.6 120.65)
@@ -8703,16 +8863,7 @@
 		)
 		(uuid "eecc5ba4-7f1f-4f71-b4e8-7f6eb449bcc0")
 	)
-	(wire
-		(pts
-			(xy 77.47 58.42) (xy 78.74 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efda4422-97d2-45fe-bff9-4d473bebfaf4")
-	)
+
 	(wire
 		(pts
 			(xy 119.38 133.35) (xy 119.38 134.62)
@@ -9145,17 +9296,7 @@
 		)
 		(uuid "78a5f056-3f3c-46fc-b89b-abcd0660c919")
 	)
-	(hierarchical_label "VBAT_SENSE"
-		(shape input)
-		(at 77.47 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8b1b62ab-3a34-4ae2-bd93-09dde6bc089d")
-	)
+
 	(hierarchical_label "chrg_ok"
 		(shape input)
 		(at 31.75 81.28 180)
@@ -10614,93 +10755,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:C")
-		(at 82.55 55.88 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ad6bbd9-4fd5-4587-ad05-260639deafa1")
-		(property "Reference" "C65"
-			(at 82.55 48.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1nF"
-			(at 82.55 50.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 86.36 56.8452 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 82.55 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f047de2f-1516-4b22-a01e-2454bd799f08")
-		)
-		(pin "1"
-			(uuid "9765b7a3-5c9a-49b7-9443-d5a65e0540cb")
-		)
-		(instances
-			(project "controller"
-				(path "/50450634-21c9-467c-beaf-30f36150c371"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-			(project "UPS"
-				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "C65")
-					(unit 1)
-				)
-			)
-		)
-	)
+
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 85.09 34.29 270)
@@ -15896,97 +15951,32 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R")
-		(at 93.98 55.88 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff7fe4f4-0be0-4978-bb08-c953dfc3a695")
-		(property "Reference" "R42"
-			(at 92.7099 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 95.2499 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 93.98 54.102 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 93.98 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "07a98a06-04f8-431d-88d0-cbcfa29bc6ab")
-		)
-		(pin "2"
-			(uuid "d3274128-4a56-4daf-91d6-f53f6619dcd1")
-		)
-		(instances
-			(project "controller"
-				(path "/50450634-21c9-467c-beaf-30f36150c371"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-			(project "UPS"
-				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437"
-					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
+
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
+
+	(no_connect (at 106.68 55.88) (uuid "6cc27d05-6499-4228-89a3-bb1712d4ce32"))
+
+(symbol (lib_id "Connector_Generic:Conn_01x03") (at 213.36 180.34 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "157a94f4-e47b-459f-8c70-ebdfcf820ad3")
+(property "Reference" "J12" (at 215.9 179.07 0)  (effects (font (size 1.27 1.27)) (justify left)))
+(property "Value" "PI_UART" (at 215.9 181.61 0)  (effects (font (size 1.27 1.27)) (justify left)))
+(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 213.36 180.34 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left)))
+(pin "1" (uuid "cb41cb88-79ed-4fb5-a5d7-60b5933758ba"))
+(pin "2" (uuid "86c92447-f897-4be1-a682-6389ee11f6ec"))
+(pin "3" (uuid "1218e5f0-4454-4fb4-8e46-bfadbbed1d36"))
+(instances (project "UPS" (path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437" (reference "J12") (unit 1)))))
+(wire (pts (xy 106.68 104.14) (xy 102.87 104.14)) (stroke (width 0) (type default)) (uuid "ae073459-e517-465a-9057-dba67cae6140"))
+(label "PI_UART_TX" (at 102.87 104.14 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b0dcfb3d-a844-4e9a-91f6-e7255fa96586"))
+(wire (pts (xy 208.28 177.8) (xy 190.5 177.8)) (stroke (width 0) (type default)) (uuid "5bc18835-cb16-46bf-b88a-a5069660a503"))
+(label "PI_UART_TX" (at 190.5 177.8 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4dc21458-0aaa-44ab-9ec3-d741424a873c"))
+(wire (pts (xy 106.68 106.68) (xy 102.87 106.68)) (stroke (width 0) (type default)) (uuid "cf744c18-0bc8-45db-b568-73bd536e9aa5"))
+(label "PI_UART_RX" (at 102.87 106.68 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7f4f30b7-a73a-4e3f-8df1-94e8bcf24dd5"))
+(wire (pts (xy 208.28 180.34) (xy 190.5 180.34)) (stroke (width 0) (type default)) (uuid "60b4119c-4c7d-4cf7-9444-20afe540154b"))
+(label "PI_UART_RX" (at 190.5 180.34 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8eab58d0-f9f8-4965-a7c5-f09312ec101b"))
+(wire (pts (xy 208.28 182.88) (xy 190.5 182.88)) (stroke (width 0) (type default)) (uuid "3ed04e7a-10fc-4be1-a80b-cf2fa62a9724"))
+(symbol (lib_id "power:GND") (at 190.5 182.88 0) (unit 1) (in_bom yes) (on_board yes) (uuid "b2b9c1ec-0da9-4506-a93a-7ff7b1bf041a") (property "Reference" "#PWR0150" (at 190.5 189.23 0) (hide yes) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "GND" (at 190.5 187.96 0)  (effects (font (size 1.27 1.27)) (justify left))) (pin "1" (uuid "5d4e5111-a177-44e6-9141-40c5c1faf509")) (instances (project "UPS" (path "/9d92b60a-4a6b-449c-b462-cab19e69d38c/1d606685-c4fd-4b8c-9a71-b1626d28c437" (reference "#PWR0150") (unit 1)))))
+(text "3.3V UART - STM perspective\n1 TX -> Pi pin 10 (RX)\n2 RX <- Pi pin 8 (TX)\n3 GND -> Pi pin 6" (at 190.5 194.31 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "4739165a-5957-4d84-8b0f-ff7b5a08e24e"))
 )

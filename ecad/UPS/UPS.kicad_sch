@@ -15,12 +15,7 @@
 		(color 0 0 0 0)
 		(uuid "58cffe1d-ce2d-4c2f-a4c6-327f64b67a77")
 	)
-	(junction
-		(at 118.11 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba70425c-4484-440e-bc8f-51805134c393")
-	)
+
 	(junction
 		(at 121.92 127)
 		(diameter 0)
@@ -467,16 +462,7 @@
 		)
 		(uuid "d6321f9d-9b92-4969-9fed-47acd35309e9")
 	)
-	(wire
-		(pts
-			(xy 167.64 110.49) (xy 118.11 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db997daf-09f9-45e1-b722-6884e9882971")
-	)
+
 	(wire
 		(pts
 			(xy 148.59 43.18) (xy 99.06 43.18)
@@ -705,16 +691,7 @@
 				(justify left)
 			)
 		)
-		(pin "VBAT_SENSE" input
-			(at 167.64 110.49 180)
-			(uuid "2c01dfe6-d16e-443c-b8ce-883612ee911d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+
 		(instances
 			(project "UPS"
 				(path "/9d92b60a-4a6b-449c-b462-cab19e69d38c"

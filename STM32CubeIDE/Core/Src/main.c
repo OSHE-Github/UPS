@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "thermistors.h"
 #include "fan_control.h"
+#include "battery_voltage.h"
 
 /* USER CODE END Includes */
 
@@ -94,6 +95,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Fan_Init();
   (void)Thermistors_Init();
+  BatteryVoltage_Init(&hi2c1);
 
   /* USER CODE END 2 */
 
@@ -102,9 +104,9 @@ int main(void)
   while (1)
   {
 
-	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 	  Thermistors_Poll();
 	  Fan_Update();
+	  BatteryVoltage_Poll();
 	  HAL_Delay(200);
 
     /* USER CODE END WHILE */
@@ -205,15 +207,11 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : LED_Pin */
-  GPIO_InitStruct.Pin = LED_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  /* PA4 is unused after removing the battery ADC branch. */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
-  HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
