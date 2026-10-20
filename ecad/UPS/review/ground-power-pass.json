@@ -1,0 +1,109 @@
+{
+  "snapshot": "C:\\Users\\john\\.codex\\backups\\UPS\\2026-10-20-125918-ground-power-pass",
+  "group": "10 Ground and main power pass",
+  "moved": {
+    "F2": {
+      "before": [
+        168.5,
+        78.5,
+        90.0
+      ],
+      "after": [
+        168.5,
+        78.5,
+        -90
+      ]
+    },
+    "Q3": {
+      "before": [
+        168.5,
+        89.5,
+        90.0
+      ],
+      "after": [
+        167.8,
+        89.5,
+        90
+      ]
+    },
+    "D3": {
+      "before": [
+        157.5,
+        46.1,
+        0.0
+      ],
+      "after": [
+        156.3,
+        46.1,
+        0
+      ]
+    },
+    "D1": {
+      "before": [
+        157.5,
+        51.6,
+        0.0
+      ],
+      "after": [
+        156.3,
+        51.6,
+        0
+      ]
+    },
+    "C6": {
+      "before": [
+        151.5,
+        48.5,
+        90.0
+      ],
+      "after": [
+        150,
+        48.8,
+        90.0
+      ]
+    },
+    "C32": {
+      "before": [
+        128.0,
+        84.0,
+        90.0
+      ],
+      "after": [
+        122.5,
+        60.4,
+        90
+      ]
+    },
+    "U1": {
+      "before": [
+        116.5,
+        59.0,
+        0.0
+      ],
+      "after": [
+        116.5,
+        60,
+        0
+      ]
+    }
+  },
+  "schematic_pad_sync": [],
+  "notes": [
+    "Power copper dimensions are provisional pending current/thermal calculation.",
+    "Thermal via solder-wicking, tenting and paste-window details need assembly review.",
+    "Current shunt stock and L1 land pattern remain unconfirmed."
+  ],
+  "initial_main_copper_items_created": 192,
+  "final_board_sha256": "c9502e60e7783569638afd922376271a33ce8601125bf8c2961190be1b391d99",
+  "final_tracks_and_vias": 1045,
+  "final_unconnected_items": 104,
+  "new_vias_touching_smt_pads": "Only intentional thermal vias under U1 pad 33 and U2 pad 21; no other new via intersects an SMT pad bounding box.",
+  "final_ground_returns": [
+    "C13",
+    "C30",
+    "C38"
+  ],
+  "routed_power_control_connections": 42,
+  "saved_user_schematics_unchanged": true,
+  "saved_user_project_unchanged": true
+}

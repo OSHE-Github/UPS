@@ -1,0 +1,39 @@
+[
+  {
+    "id": "charger-hidrv1-separated-from-ground",
+    "from_net": "GND",
+    "to_net": "Net-(U1-HIDRV1)",
+    "nodes": [
+      [
+        "Q7",
+        "4"
+      ],
+      [
+        "U1",
+        "31"
+      ]
+    ],
+    "reason": "After Tyler's review, the user corrected the schematic: C13 pin 2 is GND, while U1 HIDRV1 and Q7 gate share their own net. Native netlist and PCB parity confirm this topology."
+  },
+  {
+    "id": "controller-boot-reset-supply-joined",
+    "mode": "merge",
+    "from_net": "3.3V",
+    "to_net": "+3.3V",
+    "nodes": [
+      [
+        "C61",
+        "2"
+      ],
+      [
+        "R29",
+        "1"
+      ],
+      [
+        "U6",
+        "2"
+      ]
+    ],
+    "reason": "Corrected two +3.3V power symbols whose Value was 3.3V, leaving boot/reset supply isolated. User authorized finishing and rebuilding the MCU subsystem; native netlist comparison confirms only these three nodes joined the regulator rail."
+  }
+]

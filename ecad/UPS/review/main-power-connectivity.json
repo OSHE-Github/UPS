@@ -1,0 +1,386 @@
+{
+  "board_sha256": "4185d4973960f2a2050bb774b24f8a6aef6937071afbf19291558f72f394dcb5",
+  "method": "In an external analysis copy under the saved project board rules, remove tracks below 0.6 mm and vias below 0.6 mm diameter on main rail nets; retain package escapes within 2.5 mm of PS1/J3 pads; native KiCad refill and connectivity query. This is a connectivity check, not current, thermal or EMC certification.",
+  "removed_items": 423,
+  "retained_package_escape_items": 16,
+  "paths": [
+    {
+      "path": "DC input",
+      "terminals": [
+        [
+          "J8",
+          "1"
+        ],
+        [
+          "Q2",
+          "5"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Reverse-protected input",
+      "terminals": [
+        [
+          "Q2",
+          "1"
+        ],
+        [
+          "Q2",
+          "2"
+        ],
+        [
+          "Q2",
+          "3"
+        ],
+        [
+          "F1",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Fused input",
+      "terminals": [
+        [
+          "F1",
+          "2"
+        ],
+        [
+          "R11",
+          "2"
+        ],
+        [
+          "C39",
+          "1"
+        ],
+        [
+          "C40",
+          "1"
+        ],
+        [
+          "C41",
+          "1"
+        ],
+        [
+          "C42",
+          "1"
+        ],
+        [
+          "C43",
+          "1"
+        ],
+        [
+          "C44",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Post-shunt input",
+      "terminals": [
+        [
+          "R11",
+          "1"
+        ],
+        [
+          "Q7",
+          "5_6_7_8"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Charger SW1",
+      "terminals": [
+        [
+          "Q7",
+          "1"
+        ],
+        [
+          "Q7",
+          "2"
+        ],
+        [
+          "Q7",
+          "3"
+        ],
+        [
+          "Q6",
+          "5_6_7_8"
+        ],
+        [
+          "L1",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Charger SW2",
+      "terminals": [
+        [
+          "L1",
+          "2"
+        ],
+        [
+          "Q5",
+          "5_6_7_8"
+        ],
+        [
+          "Q1",
+          "1"
+        ],
+        [
+          "Q1",
+          "2"
+        ],
+        [
+          "Q1",
+          "3"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "System rail",
+      "terminals": [
+        [
+          "Q1",
+          "5_6_7_8"
+        ],
+        [
+          "Q4",
+          "1"
+        ],
+        [
+          "Q4",
+          "2"
+        ],
+        [
+          "Q4",
+          "3"
+        ],
+        [
+          "R38",
+          "2"
+        ],
+        [
+          "C47",
+          "1"
+        ],
+        [
+          "C48",
+          "1"
+        ],
+        [
+          "C51",
+          "1"
+        ],
+        [
+          "C52",
+          "1"
+        ],
+        [
+          "C53",
+          "1"
+        ],
+        [
+          "C54",
+          "1"
+        ],
+        [
+          "C55",
+          "1"
+        ],
+        [
+          "C56",
+          "1"
+        ],
+        [
+          "C57",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Battery charge shunt",
+      "terminals": [
+        [
+          "Q4",
+          "5"
+        ],
+        [
+          "Q4",
+          "6"
+        ],
+        [
+          "Q4",
+          "7"
+        ],
+        [
+          "Q4",
+          "8"
+        ],
+        [
+          "R17",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Battery bus",
+      "terminals": [
+        [
+          "R17",
+          "2"
+        ],
+        [
+          "B1",
+          "2"
+        ],
+        [
+          "B2",
+          "2"
+        ],
+        [
+          "B3",
+          "2"
+        ],
+        [
+          "B4",
+          "2"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Boost input",
+      "terminals": [
+        [
+          "R38",
+          "1"
+        ],
+        [
+          "L2",
+          "1"
+        ],
+        [
+          "C18",
+          "1"
+        ],
+        [
+          "C19",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Boost SW",
+      "terminals": [
+        [
+          "L2",
+          "2"
+        ],
+        [
+          "PS1",
+          "4"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Boost output",
+      "terminals": [
+        [
+          "PS1",
+          "5"
+        ],
+        [
+          "C24",
+          "1"
+        ],
+        [
+          "C25",
+          "1"
+        ],
+        [
+          "C26",
+          "1"
+        ],
+        [
+          "F2",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "Fused 5V",
+      "terminals": [
+        [
+          "F2",
+          "2"
+        ],
+        [
+          "Q3",
+          "2"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    },
+    {
+      "path": "USB output",
+      "terminals": [
+        [
+          "Q3",
+          "3"
+        ],
+        [
+          "J3",
+          "A9"
+        ],
+        [
+          "J3",
+          "A4"
+        ],
+        [
+          "J3",
+          "B9"
+        ],
+        [
+          "J3",
+          "B4"
+        ],
+        [
+          "C11",
+          "2"
+        ],
+        [
+          "C12",
+          "1"
+        ]
+      ],
+      "connected_without_small_signal_tracks": true,
+      "missing": []
+    }
+  ]
+}

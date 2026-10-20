@@ -860,7 +860,7 @@
         "uuid": "9d92b60a-4a6b-449c-b462-cab19e69d38c"
       }
     ],
-    "used_designators": "J2,J5-8,J11,R43-44,R47,#PWR2-4,#PWR6,#PWR50,#PWR127-129,D11,C66-70,C73,Q8",
+    "used_designators": "J2,J5-8,J11,R43-44,R47,#PWR2-4,#PWR6,#PWR15,#PWR50,#PWR127-129,D11,C66-70,C73,Q8",
     "variants": []
   },
   "sheets": [

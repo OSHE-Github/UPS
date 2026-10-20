@@ -1,0 +1,194 @@
+{
+  "board_sha256": "8f682a4bec7890dbae49cf565d6f599fec65b1b020244e5ea673530243800243",
+  "before_board_sha256": "45250dadf453c52d911a19051327077e2238159ac65764ba5d17ce9bdb51cc5b",
+  "snapshot": "C:\\Users\\john\\.codex\\backups\\UPS\\2026-10-20-bq-finish",
+  "all_previous_pad_connections_preserved": true,
+  "pad_memberships_checked": 472,
+  "values_footprints_positions_and_pad_nets_unchanged": true,
+  "schematics_unchanged": true,
+  "project_settings_unchanged": true,
+  "u1_nets": [
+    {
+      "net": "/Charger/CMPIN",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/Charger_VBUS_IN",
+      "pads": 12,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/OTG{slash}VAP",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/PROCHOT_N",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/VBAT_SENSE",
+      "pads": 10,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/chrg_ok",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/cmp_out",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/SCL",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/SDA",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "BTST1",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "BTST2",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "COMP1",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "COMP2",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "GND",
+      "pads": 126,
+      "all_pads_connected": true
+    },
+    {
+      "net": "ILIM_HIZ",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-ACN)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-BATDRV_N)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-CELL_BATPRESZ)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-HIDRV1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-HIDRV2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-IADPT)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-IBAT)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-LODRV1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-LODRV2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-PSYS)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-SRP)",
+      "pads": 8,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-SW2)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "PMOS_OUT_GATE",
+      "pads": 15,
+      "all_pads_connected": true
+    },
+    {
+      "net": "REGN",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "SW1",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "VDDA",
+      "pads": 5,
+      "all_pads_connected": true
+    }
+  ],
+  "bq_all_nets_fully_connected": true,
+  "unconnected_items_before": 72,
+  "unconnected_items_after": 47,
+  "drc": {
+    "malformed_courtyard": 4,
+    "via_dangling": 13,
+    "silk_edge_clearance": 5,
+    "lib_footprint_mismatch": 44,
+    "text_height": 5,
+    "silk_overlap": 55,
+    "silk_over_copper": 52
+  },
+  "schematic_parity_issues": 0,
+  "ground_returns_added": [
+    "R1.2",
+    "C38.2",
+    "U4.12"
+  ],
+  "auxiliary_5V_bypass_layer": "B.Cu",
+  "auxiliary_5V_width_mm": 0.8,
+  "notes": [
+    "All BQ support and MCU control nets connected.",
+    "Existing SCL/SDA escapes and local SRP/SRN sense branches rerouted to clear BQ pin exits.",
+    "Original In1.Cu ground reference retained; no signal tracks added on In1.Cu.",
+    "R1 ground pad uses a local solid-zone connection with a dedicated return via.",
+    "Current, thermal, EMI and switching-loop review remains required; connectivity is not fabrication approval."
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "before_board_sha256": "8f682a4bec7890dbae49cf565d6f599fec65b1b020244e5ea673530243800243",
+  "snapshot": "C:\\Users\\john\\.codex\\backups\\UPS\\2026-10-20-stm-routing-room",
+  "moved_references": [
+    "R15",
+    "R33",
+    "R39",
+    "R18",
+    "U4",
+    "R19",
+    "C62",
+    "R16",
+    "R12",
+    "R23",
+    "R34",
+    "R24",
+    "R29",
+    "C27",
+    "R10",
+    "R37",
+    "R9",
+    "R46",
+    "C4",
+    "R36",
+    "R22",
+    "R20",
+    "C49",
+    "C50",
+    "C61",
+    "R28",
+    "C72",
+    "C63",
+    "R21"
+  ],
+  "delta_mm": [
+    30,
+    -5
+  ],
+  "stm32_before_mm": [
+    71,
+    147
+  ],
+  "stm32_after_mm": [
+    101,
+    142
+  ],
+  "all_previous_pad_connections_preserved": true,
+  "pad_memberships_checked": 472,
+  "values_footprints_pad_nets_unchanged": true,
+  "other_footprint_positions_unchanged": true,
+  "unconnected_items_before": 47,
+  "unconnected_items_after": 47,
+  "board_sha256": "fac9935f8ff8923d5a6424551efa17868a6ca4cf7d91f671a87edb02a22ce886",
+  "u1_nets": [
+    {
+      "net": "/Charger/CMPIN",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/Charger_VBUS_IN",
+      "pads": 12,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/OTG{slash}VAP",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/PROCHOT_N",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/VBAT_SENSE",
+      "pads": 10,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/chrg_ok",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/cmp_out",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/SCL",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/SDA",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "BTST1",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "BTST2",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "COMP1",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "COMP2",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "GND",
+      "pads": 129,
+      "all_pads_connected": true
+    },
+    {
+      "net": "ILIM_HIZ",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-ACN)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-BATDRV_N)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-CELL_BATPRESZ)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-HIDRV1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-HIDRV2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-IADPT)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-IBAT)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-LODRV1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-LODRV2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-PSYS)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-SRP)",
+      "pads": 8,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-SW2)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "PMOS_OUT_GATE",
+      "pads": 15,
+      "all_pads_connected": true
+    },
+    {
+      "net": "REGN",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "SW1",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "VDDA",
+      "pads": 5,
+      "all_pads_connected": true
+    }
+  ],
+  "drc": {
+    "malformed_courtyard": 4,
+    "via_dangling": 13,
+    "silk_edge_clearance": 5,
+    "lib_footprint_mismatch": 44,
+    "text_height": 5,
+    "silk_overlap": 56,
+    "silk_over_copper": 53
+  },
+  "schematic_parity_issues": 0
+}
