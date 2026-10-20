@@ -9,7 +9,8 @@ read=lambda name:json.loads((root/name).read_text(encoding="utf-8-sig"))
 r=read("review/candidate-drc.json")
 counts=collections.Counter(v["type"] for v in r["violations"])
 native_checks=["shorting_items","clearance","courtyards_overlap","hole_clearance","hole_to_hole",
-               "npth_inside_courtyard","pth_inside_courtyard","items_not_allowed","copper_edge_clearance"]
+               "npth_inside_courtyard","pth_inside_courtyard","items_not_allowed","copper_edge_clearance",
+               "tracks_crossing","solder_mask_bridge"]
 assert not any(counts[x] for x in native_checks),{x:counts[x] for x in native_checks if counts[x]}
 assert not r["schematic_parity"],r["schematic_parity"]
 def nets(name):
@@ -33,11 +34,11 @@ for ref in ["H1","H2","H3","H4"]:
     assert fps[ref]["pads"][0]["drill"]==[2.7,2.7]
 for i in range(39,45):assert fps[f"C{i}"]["lib"]=="Capacitor_SMD:C_1210_3225Metric"
 for i in range(51,58):assert fps[f"C{i}"]["lib"]=="Capacitor_SMD:C_0805_2012Metric"
-summary={"status":"PLACEMENT CHECKS PASS; ROUTING AND ELECTRICAL REVIEW STILL REQUIRED",
+summary={"status":"PLACEMENT AND BOOST TRIAL CLEARANCE CHECKS PASS; ROUTING AND ELECTRICAL REVIEW STILL REQUIRED",
          "native_checks":{x:counts[x] for x in native_checks},"schematic_parity_issues":0,
          "electrical_topology_matches_source":True,"source_base_preserved_in_git":baseline["commit"],
          "source_project_settings_preserved":True,"footprints":len(fps),
-         "retained_or_translated_tracks_and_vias":len(geometry["tracks"]),
+         "total_tracks_and_vias":len(geometry["tracks"]),
          "unconnected_items":len(r["unconnected_items"]),"remaining_drc":dict(sorted(counts.items())),
          "pi_hole_spacing_mm":[58,49],"pi_mount_holes_mm":holes,"bottom_components":["B1","B2","B3","B4"]}
 (root/"review/validation-summary.json").write_text(json.dumps(summary,indent=2))

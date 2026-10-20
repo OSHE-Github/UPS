@@ -4,7 +4,7 @@ Open **ecad/UPS/UPS.kicad_pro** and continue editing **ecad/UPS/UPS.kicad_pcb** 
 
 The team's starting design remains on **newmain**, at commit `f5ad96ca7c6ce8b75538aafb6f14a27db1c61da7`. Switch Git branches to compare versions. Close KiCad before switching branches and reopen this same project afterward so an old editor session cannot overwrite the checked-out version.
 
-**Placement checks pass under the original project's constraints. Power routing and electrical review remain unfinished; this board is not ready for fabrication.**
+**Placement and boost-trial clearance checks pass under the original project constraints. Routing, thermal connections, and electrical review remain unfinished; this board is not ready for fabrication.**
 
 ![Placement overview](review/candidate-placement.png)
 
@@ -22,7 +22,7 @@ The overview simplifies pad geometry. Use the native [front assembly drawing](re
 | Left edge | Programming, display, temperature, and UART connector pins occupy the free strip beside the holders. |
 | Between holders | Two channels carry the Pi mounting hardware. Reset/boot buttons sit in those channels beyond the Pi board envelope. |
 
-The nominal rectangular outline remains **121.92 × 139.70 mm**. The candidate contains seven named KiCad groups so stages can be selected and adjusted together.
+The nominal rectangular outline remains **121.92 × 139.70 mm**. The candidate contains eight named KiCad groups so stages can be selected and adjusted together.
 
 ## Pi 5 boot arrangement
 
@@ -41,9 +41,9 @@ These are nominal dimensions from the [official Pi 5 mechanical drawing](https:/
 
 ## Power and EMI intent
 
-The [team messages supplied by the user](inputs/team-layout-intent.md) establish the MCU-at-bottom-left floorplan, large VSYS/5 V/VBUS pours, and provision for 3 × 2 via arrays. The candidate reserves space for those connections. Array circles and rail labels on Dwgs.User are **planning marks**, not installed vias or completed copper rails.
+The [team messages supplied by the user](inputs/team-layout-intent.md) establish the MCU-at-bottom-left floorplan, large VSYS/5 V/VBUS pours, and provision for 3 × 2 via arrays. The boost trial now has real, net-assigned 3 × 2 via arrays at its DC-input and local power-ground connections. Other power stages remain unfinished. Rail labels on Dwgs.User are planning annotations; the former array circles were removed to avoid confusing them with real vias.
 
-The original four-layer stack and project settings are preserved. Ground zones are present on F.Cu, In1.Cu, and B.Cu. The inner ground reference should remain continuous beneath signal paths; sensitive feedback and current sensing need local, quiet returns. Ground stitching and the high-current power pours are still to be designed.
+The original four-layer stack and project settings are preserved. Ground zones are present on F.Cu, In1.Cu, and B.Cu. The inner ground reference should remain continuous beneath signal paths; sensitive feedback and current sensing need local, quiet returns. The front ground fill is notched around the boost stage, where bounded output-return and power-ground copper is used. The bottom ground fill remains, with a higher-priority, bounded DC-input pour. Broad ground coverage elsewhere is intentional. Final high-current rail dimensions and stitching still need thermal/current review.
 
 For the routing pass:
 
@@ -52,6 +52,18 @@ For the routing pass:
 - Size each DC rail separately for voltage drop and temperature rise. A 5 A output does not imply a 5 A battery path: as an illustration, 25 W at 3.0 V and an assumed 90% efficiency requires about 9.3 A input. This is an example, not the team's design current.
 - Choose via drill, plating, pad, number, and distribution from the actual current and thermal requirements. The messages do not contain the dimensions or calculation supporting the earlier single-via 5 A estimate.
 - Check thermal-relief spokes and pad necks as current bottlenecks. Large pours and multiple vias alone do not establish current capacity or EMC performance.
+
+## Boost routing checkpoint — 20 October 2026
+
+![Boost trial, front copper and assembly geometry](review/boost-routing-detail.png)
+
+PS1 is rotated toward L2. Its output capacitor bank is to the left, compensation and feedback parts to the right, and Q3 is turned along the board edge. The bootstrap, VIN bypass, VCC/EN, feedback and compensation connections are routed locally. Six DC-input vias feed a bounded B.Cu input pour; six power-ground vias and separate local analog-ground connections meet the inner ground reference. Output sensing is taken from the output capacitor bank. In2 carries short control connections; the output-sense connection uses B.Cu.
+
+This proves a locally connected arrangement under the current clearance rules. It does **not** establish output current, regulator stability, temperature rise, or EMI performance. The package escapes, input-via bottleneck, output bus, ground return, and exposed-pad connections need a current/thermal review. Several signal vias are 0.50 mm diameter / 0.23 mm drill; the power-array vias are 0.60 / 0.30 mm. Confirm fabrication capability and plating before release.
+
+The charger-to-boost feed, boost-to-F2/Q3/output power path, and the rest of the board remain unfinished. Do not treat the local trial as a completed supply. The next efficient step is to review this boost loop and its actual current requirements, resolve the charger schematic issues below, then route that charger stage before general signals. Keep the copper fills while reviewing connectivity; hide filled areas in KiCad when they obscure pad/trace inspection.
+
+The prior placement checkpoint is commit `f051c72`; the pre-trial native files and construction utility are archived outside the checkout at `C:/Users/john/.codex/backups/UPS/2026-10-20-boost-trial/`. Continue editing the one active PCB rather than rebuilding from that snapshot.
 
 ## BOM use and unresolved decisions
 
@@ -84,10 +96,10 @@ The final native KiCad DRC, with zones refilled and the original project constra
 
 - **0** copper shorts, clearance violations, courtyard overlaps, drill-clearance conflicts, hole-to-hole conflicts, keepout infringements, or copper-edge violations.
 - **0** schematic/PCB parity issues.
-- **232 unconnected items**. This is an unfinished routing candidate.
-- **227 remaining DRC findings**: 70 silk-over-copper, 61 silk overlap, 44 library-footprint mismatches, 22 dangling tracks, 11 incomplete thermal connections, 6 silk-edge findings, 5 text-height findings, 4 malformed courtyards, and 4 dangling vias.
+- **211 unconnected items** (down from 232 before the boost trial). This is an unfinished routing candidate.
+- **214 remaining DRC findings**: 62 silk-over-copper, 57 silk overlap, 44 library-footprint mismatches, 22 dangling tracks, 10 incomplete thermal connections, 6 silk-edge findings, 5 text-height findings, 4 malformed courtyards, and 4 dangling vias.
 
-There are **173 footprints**, including four board-only mounts, and **275 retained or translated track/via items** from the original 635. Copper attached to relocated components or conflicting with the new mechanics was removed from this branch and recorded. The starting board is preserved in Git at `f5ad96ca7c6ce8b75538aafb6f14a27db1c61da7:ecad/UPS/UPS.kicad_pcb`.
+There are **173 footprints**, including four board-only mounts, and **386 track/via items**: 275 retained or translated from the original 635, plus 111 added in this routing trial. Copper attached to relocated components or conflicting with the new mechanics was removed from this branch and recorded. The starting board is preserved in Git at `f5ad96ca7c6ce8b75538aafb6f14a27db1c61da7:ecad/UPS/UPS.kicad_pcb`.
 
 Source SHA-256 hashes, the Git baseline manifest, native exports, movement records, packing refinements, routing actions, and DRC reports are retained in `review/`. The source manifest records the files captured before placement changes. Extra native board copies and the source autosave were archived outside the checkout. The autosave had the same footprint positions and track count as the saved board, apart from one unused mechanical footprint.
 

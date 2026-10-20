@@ -33,7 +33,7 @@ for f in b.GetFootprints():
 out["tracks"] = [{"uuid": t.m_Uuid.AsString(), "type": t.GetClass(), "layer": t.GetLayerName(),
                   "net": t.GetNetname(), "start": point(t.GetStart()), "end": point(t.GetEnd()),
                   "width": mm(t.GetWidth(t.GetLayer()) if t.GetClass() == "PCB_VIA" else t.GetWidth())} for t in b.GetTracks()]
-out["zones"] = [{"uuid": z.m_Uuid.AsString(), "layer": z.GetLayerName(),
+out["zones"] = [{"uuid": z.m_Uuid.AsString(), "layers": [b.GetLayerName(layer) for layer in z.GetLayerSet().Seq()],
                  "net": z.GetNetname()} for z in b.Zones()]
 target = Path(sys.argv[2])
 target.write_text(json.dumps(out, indent=2), encoding="utf-8")
