@@ -15,6 +15,8 @@
   *
   ******************************************************************************
   */
+/* The custom thermistor module owns ADC1; preserve this on CubeMX regeneration. */
+#define HAL_ADC_MODULE_ENABLED
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32L1xx_HAL_CONF_H

@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "thermistors.h"
 
 /* USER CODE END Includes */
 
@@ -90,6 +91,7 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+  (void)Thermistors_Init();
 
   /* USER CODE END 2 */
 
@@ -99,6 +101,7 @@ int main(void)
   {
 
 	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+	  Thermistors_Poll();
 	  HAL_Delay(200);
 
     /* USER CODE END WHILE */

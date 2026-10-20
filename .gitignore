@@ -8,3 +8,5 @@
 # cache files
 fp-*cache
 ecad/UPS/controller.csv
+/tests
+/docs
