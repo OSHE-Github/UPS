@@ -655,7 +655,7 @@
 				(justify left)
 			)
 		)
-		(pin "bat_th3" input
+		(pin "bat_th4" input
 			(at 167.64 153.67 180)
 			(uuid "cd670fbf-d4fb-4f3c-9d30-75d5635a7a0f")
 			(effects
@@ -861,7 +861,7 @@
 				(justify right)
 			)
 		)
-		(pin "bat_th3" input
+		(pin "bat_th4" input
 			(at 99.06 85.09 0)
 			(uuid "09353626-fc3d-4c0d-925d-7d7beecf8dbc")
 			(effects

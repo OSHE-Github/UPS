@@ -2,16 +2,27 @@
 #include "thermistors.h"
 #include <math.h>
 
-/* Two independent dividers: 3V3--10k--ADC--10k NTC(B3950)--GND.
- * 100nF from each ADC node to ground. PC0/ADC10 and PC1/ADC11.
+/* Each divider: 3V3--10k--ADC--10k NTC(B3950)--GND.
+ * 100nF from each ADC node to ground.
  * These are measurements only; charging policy is not implemented here.
  */
 static ADC_HandleTypeDef adc;
 static uint8_t ready;
-volatile ThermistorReading thermistors[2] = {
-    {0, 0, THERM_ADC_ERROR}, {0, 0, THERM_ADC_ERROR}
-};
+volatile ThermistorReading thermistors[THERMISTOR_COUNT];
 volatile uint32_t thermistor_errors;
+volatile uint32_t thermistor_sample_tick;
+volatile uint8_t thermistor_scan_complete;
+#ifdef UPS_THERMISTORS
+static const uint32_t channels[THERMISTOR_COUNT] = {
+    ADC_CHANNEL_10, ADC_CHANNEL_11
+};
+#else
+/* Battery 1/J2/PB13, 2/J5/PB14, 3/J11/PC0, 4/J6/PB15, board/J10/PC1. */
+static const uint32_t channels[THERMISTOR_COUNT] = {
+    ADC_CHANNEL_19, ADC_CHANNEL_20, ADC_CHANNEL_10, ADC_CHANNEL_21,
+    ADC_CHANNEL_11
+};
+#endif
 
 ThermistorReading Thermistors_Convert(uint16_t raw)
 {
@@ -29,6 +40,10 @@ ThermistorReading Thermistors_Convert(uint16_t raw)
 HAL_StatusTypeDef Thermistors_Init(void)
 {
     ready = 0;
+    thermistor_scan_complete = 0;
+    for (unsigned sensor = 0; sensor < THERMISTOR_COUNT; ++sensor) {
+        thermistors[sensor] = (ThermistorReading){0, 0, THERM_ADC_ERROR};
+    }
     /* ADC has an asynchronous HSI clock, even when the UPS CPU runs from MSI. */
     RCC_OscInitTypeDef osc = {0};
     osc.OscillatorType = RCC_OSCILLATORTYPE_HSI;
@@ -44,6 +59,11 @@ HAL_StatusTypeDef Thermistors_Init(void)
     gpio.Mode = GPIO_MODE_ANALOG;
     gpio.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOC, &gpio);
+#ifndef UPS_THERMISTORS
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+    gpio.Pin = GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15;
+    HAL_GPIO_Init(GPIOB, &gpio);
+#endif
     adc.Instance = ADC1;
     adc.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV4;
     adc.Init.Resolution = ADC_RESOLUTION_12B;
@@ -66,10 +86,11 @@ HAL_StatusTypeDef Thermistors_Init(void)
 
 void Thermistors_Poll(void)
 {
-    for (unsigned sensor = 0; sensor < 2; ++sensor) {
+    thermistor_scan_complete = 0;
+    for (unsigned sensor = 0; sensor < THERMISTOR_COUNT; ++sensor) {
         ThermistorReading reading = {0, 0, THERM_ADC_ERROR};
         ADC_ChannelConfTypeDef config = {0};
-        config.Channel = sensor ? ADC_CHANNEL_11 : ADC_CHANNEL_10;
+        config.Channel = channels[sensor];
         config.Rank = ADC_REGULAR_RANK_1;
         config.SamplingTime = ADC_SAMPLETIME_384CYCLES;
         HAL_StatusTypeDef result = ready ? HAL_ADC_ConfigChannel(&adc, &config) : HAL_ERROR;
@@ -89,4 +110,6 @@ void Thermistors_Poll(void)
         else ++thermistor_errors;
         thermistors[sensor] = reading; // Never retain a stale valid temperature on failure.
     }
+    thermistor_sample_tick = HAL_GetTick();
+    thermistor_scan_complete = 1;
 }
