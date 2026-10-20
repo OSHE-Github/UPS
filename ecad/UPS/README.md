@@ -1,3 +1,51 @@
+## Current and thermal review - 2026-10-20
+
+**The current board is not qualified for continuous 5 A USB output.** Two specified parts lack margin, and a single via carries the entire boost-input current. No PCB or firmware changes were made during this review.
+
+The user confirmed the [GST36U12-P1J adapter](https://www.meanwell.com/Upload/PDF/GST36U/GST36U-SPEC.PDF): 12 V, 3 A, 36 W. Battery model remains unknown. The 5 A load is a review scenario, not a confirmed requirement. Calculations use the fitted boost divider's nominal 5.0895 V, 150 mA of provisional auxiliary load, 90% boost efficiency and 93% charger-stage efficiency. Efficiencies and auxiliary current must be measured. Voltages below refer to the boost input; battery-terminal voltage must be higher by the upstream drop. Four cells share current only approximately.
+
+| Boost input | Input current at 3 A USB | Input current at 5 A USB |
+| --- | ---: | ---: |
+| 4.2 V | 4.24 A | 6.93 A |
+| 3.7 V | 4.81 A | 7.87 A |
+| 3.3 V | 5.40 A | 8.83 A |
+| 3.0 V | 5.94 A | 9.71 A |
+
+### Changes to prioritize
+
+1. **R38:** the BOM's [RCL1218 jumper](https://www.vishay.com/docs/20046/rcle3.pdf) is rated 7 A, with resistance up to 20 milliohms. The 5 A USB scenario exceeds that at low battery. At 9.71 A, its resistance bound corresponds to 1.88 W; this is a sensitivity bound, not a measured loss. Replace it with a suitably rated low-resistance link or designed copper connection. Do not simply assume zero ohms means unlimited current.
+2. **R38 copper escape:** a native connectivity experiment confirms that removing the single via at (133, 73) mm disconnects R38.1 from L2.1. Its drill is 0.3 mm, and its front trace is 0.8 mm wide / 1.4375 mm long. Provide a broad connection and a distributed via array when redesigning this feed. The other ten VIN vias do not bypass this bottleneck. [Evidence](review/current-path-bottleneck.json).
+3. **F2:** the [MF-USML550/12](https://www.bourns.com/docs/product-datasheets/mf-usml-x.pdf) holds 5.5 A at 23 C, 4.68 A at 40 C, 4.15 A at 50 C and 3.6 A at 60 C. It carries USB plus auxiliary current. A 5 A USB load therefore lacks hot-enclosure margin. Select protection by hot hold-current, fault behavior and downstream ratings together; simply fitting a larger fuse is not a complete fix. F1 is also only 12 V rated, requiring voltage-margin review on the nominal 12 V adapter input.
+
+### Where heat is likely
+
+| Part / path | Calculation or observation | Review consequence |
+| --- | --- | --- |
+| R17 battery shunt | 0.94 W at 9.71 A with schematic 10 milliohms; 0.12 W with BOM 1.3 milliohms | Resolve the actual resistance, rating and footprint; these alternatives also change current measurement/control. |
+| L2 boost inductor | About 0.51 W copper loss at 9.71 A using maximum 20 C DCR, before core loss and hot-resistance increase | Its published 16.8 A / 40 K-rise and 24.7 A / 30%-inductance-drop figures suggest current headroom; actual PCB temperature still needs testing. [Panasonic](https://na.industrial.panasonic.com/products/inductors-coils/surface-mount-power-inductors/lineup/power-inductors-automotive-applications/series/57509/model/70593). |
+| PS1 boost stage | 2.91 W total converter loss at 90% efficiency, versus 1.38 W at 95%, at the provisional 5 A load | This includes L2 and other converter losses; it is not all IC heat. Do not add L2 loss to it again. |
+| Q4 battery FET | At 9.71 A, every 10 milliohms produces 0.94 W | Its resistance needs actual gate drive and hot-junction characterization. The FDS6681Z guarantees quoted on-resistance at -4.5/-10 V gate drive; do not assume those numbers at low 1S voltage. [onsemi](https://www.onsemi.com/download/data-sheet/pdf/fds6681z-d.pdf). |
+| Q3 USB switch | 5 A through 4 milliohms is 0.10 W at the datasheet's 4.5 V gate-drive condition | Verify gate overdrive and hot resistance; not currently the leading estimated heater. [Infineon](https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlr7843-datasheet-en.pdf). |
+| L1 charger inductor | Published 12 A RMS at 40 C rise, 27 A saturation criterion, 7 milliohm maximum DCR | It carries system current plus charge current on adapter power. A 36 W / 93% / 3 V limiting scenario is 11.16 A and about 0.87 W DC copper loss before ripple/core loss. Use actual VSYS setting, not battery voltage, for final sizing. Footprint compatibility remains unresolved. [Bourns](https://www.bourns.com/docs/product-datasheets/srp1038a.pdf). |
+
+At the 5 A scenario, the adapter supplies approximately **2.61 A before charging**, leaving an upper estimate of **4.36 W** on the system rail for charging, before charge-path loss and design reserve. That is about 1 A charging near 4.2 V. Charge-current control must yield to the 3 A input limit. The firmware inspected currently handles battery voltage and fan control; this review did not find a complete charging/temperature-shutdown policy in the production main loop.
+
+### Temperature and copper limits
+
+The [TPS61288 datasheet](https://www.ti.com/lit/ds/symlink/tps61288.pdf) specifies a 125 C recommended junction maximum and reports 33.6 C/W on its EVM versus 71.4 C/W on its standard test board. At 40 C ambient and 1 W IC dissipation these give 74 C versus 111 C; at 1.5 W they give 90 C versus 147 C. These are sensitivity examples, not predictions for this PCB or certification of the selected L variant. The 15 A headline is peak switch current, not available USB output current; its current-limit table is characterized under different voltage conditions.
+
+The saved stackup specifies approximately 2 oz outer copper and 0.5 oz inner copper. Confirm these with the fabricator. Broad outer pours help, but neither connectivity nor via count establishes temperature rise. The one via's resistance is approximately 1.2 milliohms if its barrel has 25 um copper over 1.634 mm; that is about 0.11 W at 9.71 A. Plating thickness is an assumption, and this does not predict via temperature. Q4 and PS1 need local spreading/airflow review; the battery holders beneath the board can obstruct cooling.
+
+Upstream voltage drop increases current: with 3.0 V at the battery and the same 5 A load, illustrative total pre-boost resistances of 20 and 40 milliohms require about 10.43 and 11.46 A, respectively, instead of 9.71 A. These resistances are sensitivity cases, not measured board values. They exclude the converter loss already represented by efficiency.
+
+### Validation still needed
+
+Resolve R38, F2 and the shunts before a full-load test. Then use a current-limited battery simulator and electronic load to sweep 1/2/3 A and only proceed to 5 A after the revised ratings permit it. Test adapter-only, battery-only, switchover and simultaneous charging at the intended minimum cell voltage. Log USB voltage at the load, battery current, voltage drops across R17/R38/F2, and temperatures at PS1, Q4, L1/L2, shunts, fuse and the via transition until stable. Repeat with the real enclosure and intended ambient/airflow. The existing fan's 40 C-on / 35 C-off policy is cooling control, not battery temperature protection. Cell-specific charge/discharge limits, current capability, cutoff voltage and holder/contact heating remain open until the cell model is identified.
+
+Calculation evidence: [20 load/voltage scenarios](review/current-thermal-scenarios.csv), [assumptions and sources](review/current-thermal-review.json). Estimates are a design screen, not a thermal simulation or load-test result.
+
+---
+
 ## Latest fabrication review - 2026-10-20
 
 **Not ready for fabrication.** This section supersedes the historical status/counts below.
