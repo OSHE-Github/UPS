@@ -1,3 +1,19 @@
+## Latest fabrication review - 2026-10-20
+
+**Not ready for fabrication.** This section supersedes the historical status/counts below.
+
+Corrected three electrical faults: R26's isolated GNDA return now joins GND; C9 is 470nF (formerly 470pF); unused STM32 VLCD pin 1 now joins the VDDA/+3.3V rail. Sources and procurement implications are recorded in [fab-findings.csv](review/fab-findings.csv). The raw supplied BOM is preserved; it must not be used as a released purchasing list yet.
+
+After native zone refill: **0 unconnected items, 0 shorts/clearance/drill/keepout/thermal-connection errors, and 0 schematic/PCB parity issues**. All 85 populated nets connect, all 504 previous numbered-pad memberships and every existing track remain preserved, and all 14 main power terminal groups pass the separate connectivity check. Footprint positions, packages, project rules, bottom-edge controls and underside connector arrangement are unchanged. The two deliberate net merges are recorded in approved-net-changes.json; C9 is the only component-value change in this pass.
+
+**Release blockers:** R11/R17 10mOhm schematic versus 1.3mOhm BOM and shunt land-pattern mismatch; D3/D4 3.5V intent versus 51V-standoff BOM; L1 manufacturer/footprint compatibility; missing explicit STM bulk/analog decoupling; replacement connector and actual-part selection. Confirm cell model, adapter voltage/current and maximum 5V load before current/thermal review. Mount-hole geometry is checked, but enclosure, component heights and cable access are not physically verified.
+
+**Remaining native findings:** 164 PCB findings (44 footprint-library mismatches, 4 malformed courtyards, 116 silkscreen/text findings), and 124 schematic ERC findings (44 errors, 80 warnings). Imported symbol types explain some ERC reports, but these have not been blanket-waived. A clean copper-routing result is not a fabrication signoff.
+
+Evidence: [fab-review.json](review/fab-review.json), [fab-findings.csv](review/fab-findings.csv), [fab-final-drc.json](review/fab-final-drc.json), [fab-final-erc.json](review/fab-final-erc.json), and [validation-summary.json](review/validation-summary.json). Backup: C:/Users/john/.codex/backups/UPS/2026-10-20-fab-checks/. Re-run tools/verify_candidate.py after refreshing native evidence for future edits.
+
+---
+
 ## Current control-layout checkpoint - 2026-10-20
 
 The MCU/control routing has been rebuilt and all existing electrical nets are now connected: **0 unconnected items**. U4 remains at (101, 142) mm. The temperature-input resistor/capacitor pairs, MCU bypass capacitors, LED row, and boot/reset controls are grouped. RESET and BOOT are together near the bottom edge, with three optional GPIO-button locations reserved on Dwgs.User; no new switches or GPIO circuits were added.

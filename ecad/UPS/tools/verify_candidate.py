@@ -63,7 +63,15 @@ room=read("review/bq-routing-room.json")
 finish_path=root/"review/bq-routing-finish.json"
 if finish_path.exists():
     finish=read("review/bq-routing-finish.json")
-    if (root/"review/controls-cleanup.json").exists():
+    if (root/"review/fab-review.json").exists():
+        fab=read("review/fab-review.json")
+        assert fab["board_sha256"]==power["board_sha256"],"Fabrication review evidence is stale"
+        assert fab["all_previous_pad_connections_preserved"] and fab["all_existing_tracks_preserved"]
+        assert fab["positions_and_footprints_unchanged"] and fab["project_settings_unchanged"]
+        assert fab["only_expected_value_change"]=={"C9":["470pF","470nF"]}
+        assert all(n["all_pads_connected"] for n in fab["all_nets"])
+        assert fab["unconnected_items"]==0 and not r["unconnected_items"]
+    elif (root/"review/controls-cleanup.json").exists():
         controls=read("review/controls-cleanup.json")
         assert controls["board_sha256"]==power["board_sha256"],"Control routing evidence is stale"
         assert controls["all_previous_pad_connections_preserved"] and controls["values_and_footprints_unchanged"]
@@ -86,7 +94,7 @@ else:
     assert room["board_sha256"]==power["board_sha256"],"BQ placement evidence is stale"
 assert room["all_previous_pad_connections_preserved"]
 assert room["values_footprints_and_pad_nets_unchanged"] and room["schematics_unchanged"] and room["project_unchanged"]
-summary={"status":"ALL EXISTING NETS ROUTED; CONNECTOR SELECTION, COMPONENT/CURRENT/THERMAL AND MANUFACTURING REVIEW REMAIN",
+summary={"status":"ALL EXISTING NETS ROUTED; NOT READY FOR FABRICATION: COMPONENT, CURRENT/THERMAL AND MANUFACTURING FINDINGS REMAIN",
          "native_checks":{x:counts[x] for x in native_checks},"schematic_parity_issues":0,
          "electrical_topology_matches_source":source_nets==candidate_nets,
          "approved_net_changes":[change["id"] for change in approved],

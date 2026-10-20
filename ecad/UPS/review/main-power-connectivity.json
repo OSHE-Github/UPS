@@ -1,5 +1,5 @@
 {
-  "board_sha256": "4185d4973960f2a2050bb774b24f8a6aef6937071afbf19291558f72f394dcb5",
+  "board_sha256": "8f9277dbbdd8075a71e02a65fae6652e6400d9615307f6dcae43ec9bf19071a8",
   "method": "In an external analysis copy under the saved project board rules, remove tracks below 0.6 mm and vias below 0.6 mm diameter on main rail nets; retain package escapes within 2.5 mm of PS1/J3 pads; native KiCad refill and connectivity query. This is a connectivity check, not current, thermal or EMC certification.",
   "removed_items": 423,
   "retained_package_escape_items": 16,

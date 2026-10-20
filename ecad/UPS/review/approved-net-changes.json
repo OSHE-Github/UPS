@@ -35,5 +35,31 @@
       ]
     ],
     "reason": "Corrected two +3.3V power symbols whose Value was 3.3V, leaving boot/reset supply isolated. User authorized finishing and rebuilding the MCU subsystem; native netlist comparison confirms only these three nodes joined the regulator rail."
+  },
+  {
+    "id": "charger-cell-divider-grounded",
+    "mode": "merge",
+    "from_net": "GNDA",
+    "to_net": "GND",
+    "nodes": [
+      [
+        "R26",
+        "2"
+      ]
+    ],
+    "reason": "Fabrication review found the cell-count divider return isolated; join it to GND as specified by BQ25730 datasheet."
+  },
+  {
+    "id": "unused-stm-vlcd-supply-connected",
+    "mode": "merge",
+    "from_net": "unconnected-(U4B-VLCD-Pad1)",
+    "to_net": "+3.3V",
+    "nodes": [
+      [
+        "U4",
+        "1"
+      ]
+    ],
+    "reason": "ST RM0038 specifies VLCD tied to VDDA when LCD is unused. VDDA is on +3.3V in this design."
   }
 ]

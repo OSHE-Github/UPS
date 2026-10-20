@@ -1,5 +1,5 @@
 {
-  "status": "ALL EXISTING NETS ROUTED; CONNECTOR SELECTION, COMPONENT/CURRENT/THERMAL AND MANUFACTURING REVIEW REMAIN",
+  "status": "ALL EXISTING NETS ROUTED; NOT READY FOR FABRICATION: COMPONENT, CURRENT/THERMAL AND MANUFACTURING FINDINGS REMAIN",
   "native_checks": {
     "shorting_items": 0,
     "clearance": 0,
@@ -20,7 +20,9 @@
   "electrical_topology_matches_source": false,
   "approved_net_changes": [
     "charger-hidrv1-separated-from-ground",
-    "controller-boot-reset-supply-joined"
+    "controller-boot-reset-supply-joined",
+    "charger-cell-divider-grounded",
+    "unused-stm-vlcd-supply-connected"
   ],
   "no_unapproved_topology_changes": true,
   "source_base_preserved_in_git": "f5ad96ca7c6ce8b75538aafb6f14a27db1c61da7",
@@ -32,7 +34,7 @@
   "bq_nets_fully_connected": 31,
   "saved_user_route_items_preserved": 4,
   "footprints": 173,
-  "total_tracks_and_vias": 3280,
+  "total_tracks_and_vias": 3296,
   "unconnected_items": 0,
   "remaining_drc": {
     "lib_footprint_mismatch": 44,

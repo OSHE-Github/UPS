@@ -5529,7 +5529,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470pF"
+		(property "Value" "470nF"
 			(at 68.58 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)

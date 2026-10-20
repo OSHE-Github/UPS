@@ -1,0 +1,494 @@
+{
+  "status": "NOT READY FOR FABRICATION: component choices, supply decoupling, current/thermal and manufacturing findings remain",
+  "board_sha256": "8f9277dbbdd8075a71e02a65fae6652e6400d9615307f6dcae43ec9bf19071a8",
+  "before_board_sha256": "4185d4973960f2a2050bb774b24f8a6aef6937071afbf19291558f72f394dcb5",
+  "all_previous_pad_connections_preserved": true,
+  "previous_pads_checked": 504,
+  "all_existing_tracks_preserved": true,
+  "positions_and_footprints_unchanged": true,
+  "project_settings_unchanged": true,
+  "only_expected_value_change": {
+    "C9": [
+      "470pF",
+      "470nF"
+    ]
+  },
+  "only_expected_net_changes": [
+    {
+      "id": "charger-cell-divider-grounded",
+      "mode": "merge",
+      "from_net": "GNDA",
+      "to_net": "GND",
+      "nodes": [
+        [
+          "R26",
+          "2"
+        ]
+      ],
+      "reason": "Fabrication review found the cell-count divider return isolated; join it to GND as specified by BQ25730 datasheet."
+    },
+    {
+      "id": "unused-stm-vlcd-supply-connected",
+      "mode": "merge",
+      "from_net": "unconnected-(U4B-VLCD-Pad1)",
+      "to_net": "+3.3V",
+      "nodes": [
+        [
+          "U4",
+          "1"
+        ]
+      ],
+      "reason": "ST RM0038 specifies VLCD tied to VDDA when LCD is unused. VDDA is on +3.3V in this design."
+    }
+  ],
+  "all_nets": [
+    {
+      "net": "+3.3V",
+      "pads": 32,
+      "all_pads_connected": true
+    },
+    {
+      "net": "+5V",
+      "pads": 14,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/BoostConvertor/Vcc",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/BoostConvertor/vbus",
+      "pads": 8,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/CMPIN",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/Charger_VBUS_IN",
+      "pads": 12,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/OTG{slash}VAP",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/PROCHOT_N",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/VBAT_SENSE",
+      "pads": 10,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/bat_th1",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/bat_th2",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/bat_th4",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/chrg_ok",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Charger/cmp_out",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/CC1",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/CC2",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/D+",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/D-",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/SCL",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/SDA",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/VBUS_out",
+      "pads": 10,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/vsel1",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/Output/vsel2",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/controller/OLED_SCL",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/controller/OLED_SDA",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/controller/PB0",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/controller/PI_UART_RX",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/controller/PI_UART_TX",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "/controller/TEMP_BOARD",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "BTST1",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "BTST2",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "COMP1",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "COMP2",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "GND",
+      "pads": 127,
+      "all_pads_connected": true
+    },
+    {
+      "net": "ILIM_HIZ",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "NRST",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(C20-Pad1)",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(C22-Pad1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(C30-Pad2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(C31-Pad2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D10-A)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D10-K)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D11-A)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D6-A)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D6-K)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D7-A)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D8-A)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D8-K)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D9-A)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(D9-K)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(J8-Pad1)",
+      "pads": 5,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(PS1-BST)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(PS1-COMP)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(PS1-FB)",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(PS1-VIN)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(Q3-G)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(Q8-G)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(SW3A-A)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(SW3A-C)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-ACN)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-BATDRV_N)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-CELL_BATPRESZ)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-HIDRV1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-HIDRV2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-IADPT)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-IBAT)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-LODRV1)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-LODRV2)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-PSYS)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-SRP)",
+      "pads": 8,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U1-SW2)",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U2-CC1)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U2-CC2)",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U2-GPIO2)",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U2-NTC)",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U2-VDD)",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "Net-(U4B-BOOT0)",
+      "pads": 4,
+      "all_pads_connected": true
+    },
+    {
+      "net": "PA13_SWDIO",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "PA14_SWCLK",
+      "pads": 2,
+      "all_pads_connected": true
+    },
+    {
+      "net": "PMOS_IN_GATE",
+      "pads": 5,
+      "all_pads_connected": true
+    },
+    {
+      "net": "PMOS_OUT_GATE",
+      "pads": 15,
+      "all_pads_connected": true
+    },
+    {
+      "net": "REGN",
+      "pads": 3,
+      "all_pads_connected": true
+    },
+    {
+      "net": "SW1",
+      "pads": 7,
+      "all_pads_connected": true
+    },
+    {
+      "net": "VDDA",
+      "pads": 5,
+      "all_pads_connected": true
+    },
+    {
+      "net": "bat_th3",
+      "pads": 4,
+      "all_pads_connected": true
+    }
+  ],
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "drc": {
+    "malformed_courtyard": 4,
+    "silk_edge_clearance": 1,
+    "lib_footprint_mismatch": 44,
+    "text_height": 5,
+    "silk_overlap": 62,
+    "silk_over_copper": 48
+  },
+  "findings_file": "fab-findings.csv",
+  "erc": {
+    "errors": 44,
+    "warnings": 80,
+    "total": 124,
+    "waived": false
+  },
+  "limitations": [
+    "No physical assembly or enclosure fit test",
+    "No current/thermal signoff without confirmed operating limits and actual parts",
+    "No exhaustive component-by-component manufacturer pin/land-pattern signoff",
+    "Raw supplied BOM preserved; corrections recorded separately"
+  ]
+}

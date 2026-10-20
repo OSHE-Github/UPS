@@ -1,5 +1,5 @@
 {
-  "board_sha256": "4185d4973960f2a2050bb774b24f8a6aef6937071afbf19291558f72f394dcb5",
+  "board_sha256": "8f9277dbbdd8075a71e02a65fae6652e6400d9615307f6dcae43ec9bf19071a8",
   "snapshot": "C:\\Users\\john\\.codex\\backups\\UPS\\2026-10-20-usbc-routing",
   "moved": {
     "D4": {
@@ -188,7 +188,7 @@
     },
     {
       "net": "GND",
-      "pads": 129,
+      "pads": 127,
       "all_pads_connected": true
     },
     {
@@ -335,5 +335,6 @@
   ],
   "revalidated_after_bq_completion": true,
   "revalidated_after_stm_move": true,
-  "revalidated_after_controls_cleanup": true
+  "revalidated_after_controls_cleanup": true,
+  "revalidated_after_fab_corrections": true
 }
