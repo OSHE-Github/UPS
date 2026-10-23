@@ -9287,6 +9287,28 @@
 			)
 		)
 	)
+	(global_label "+3.3V"
+		(shape input)
+		(at 125.73 40.64 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed000727-5fe0-4157-b6fb-14a941b3e48f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.73 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "bat_th3"
 		(shape input)
 		(at 160.02 45.72 0)
@@ -16213,10 +16235,5 @@
 		(path "/"
 			(page "1")
 		)
-	)
-	(global_label "+3.3V" (shape input) (at 125.73 40.64 90)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "ed000727-5fe0-4157-b6fb-14a941b3e48f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 125.73 40.64 90) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 )

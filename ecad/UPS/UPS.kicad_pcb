@@ -151,7 +151,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "Gerber/")
 		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
@@ -45287,6 +45287,14 @@
 		(uuid "abcea54c-925d-4bdc-b5f4-c644019a8a42")
 	)
 	(segment
+		(start 109.775 70)
+		(end 110.5 70.725)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "GND")
+		(uuid "b095d155-5a46-4d33-8e32-b2b3a745b423")
+	)
+	(segment
 		(start 146.6 52.6)
 		(end 146.6 53.7)
 		(width 0.3)
@@ -45509,6 +45517,14 @@
 		(layer "F.Cu")
 		(net "GND")
 		(uuid "e59205d0-1dbf-406b-840f-7a11a378867f")
+	)
+	(segment
+		(start 109.5 70)
+		(end 109.775 70)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "GND")
+		(uuid "e7a2f9fc-3d5a-467c-ad06-24cff228742c")
 	)
 	(segment
 		(start 92.975 63.5)
@@ -84658,40 +84674,6 @@
 			"f5177a65-fa72-4c71-9760-ce55f56354f8" "f612480a-48b5-4218-be02-03a40bd74636"
 			"f61d13d9-a448-491e-9c0d-0a6d622b703d" "f7a0a3b4-833a-4614-85e0-4df41b10a91c"
 			"f93d9720-63fb-42e5-8f47-0b479760ea01" "fc8face8-ef1c-4730-94a2-81a28fd53eb9"
-		)
-	)
-	(group "03 Charger stage"
-		(uuid "e401d864-a835-463f-9195-da5ac196efa1")
-		(members "05897064-0f70-430c-b756-48c6771ca5cb" "0b86fd1b-ef5b-4d54-8ec0-c2e49ea2230f"
-			"16bf46de-922b-4c45-930f-0140f2b5ec83" "1879e19b-add3-434f-b7e6-c18557a0b2a2"
-			"1a9ab5ac-e4d3-48bf-806e-5799780718ee" "3bc1584b-061a-4d0b-84a9-9fcd3bf24013"
-			"3f7b7052-689b-4be9-9a0e-76aeabdaf8c7" "4cb85824-6874-4e86-92c1-8078d3f7a44d"
-			"53bb2a92-5084-47d6-ac21-34633ffef29c" "53f8ac45-6a97-40f5-8d13-9b6316941f0a"
-			"54b72ebd-d823-4967-b3c5-0ceea73738f3" "554536d8-0e39-4c7b-83e7-8c5a84cdc3b7"
-			"56394892-a66a-4643-91c7-47a03635ac1a" "5ad40e50-832c-4fe7-b2e2-6e375bd6dd1a"
-			"5f1884aa-05f8-4cf6-980e-de739945d057" "5f8c40f6-2289-4d8f-b20b-7288341d11bb"
-			"6476da96-6e6e-4593-8c86-4bab6ac90999" "6901f076-c213-4efc-858a-df1d3ea190a1"
-			"69428a10-d316-4f8e-b9e1-cafc304ca8fe" "6d6c897e-a947-4f72-9a31-2a1c24986c87"
-			"6e5e9a0d-f477-4f32-b87f-7e856325a86a" "72aaea4f-f73b-4ac0-8a01-3d748063d83e"
-			"7735cc1f-2cba-4ec3-91b8-6f7e1ec19a13" "7dabf288-81e3-40d9-8211-82523be87615"
-			"8017bdb9-c594-4334-a9f1-f3dae43ca059" "805d6e7a-f45d-42b8-b9de-436f974f219c"
-			"82a20f15-8e44-4e2d-8700-dba134277078" "8341b183-6e48-40a3-9cae-25a9d452d706"
-			"837947ea-0f4c-4a46-800a-3e550dbbbc96" "8b20c385-5a62-43fa-984f-f47d2c1c807d"
-			"8ef91f28-822a-4065-817d-c06425fa4fc1" "8f38f851-0e6f-4360-b318-477f9b6d38b3"
-			"926b51e1-c85e-4c61-a784-70b4339bc357" "95bd6f01-f838-4f05-8197-72926050548f"
-			"9926f50e-d027-429e-980a-0d60a5a71527" "a154778c-6e66-4a48-880a-ab34118bd0ff"
-			"a5b679d7-273e-455b-b841-b6bd91d6c2b9" "a8a8e0eb-8625-4777-b297-52ae864ff0c7"
-			"ac29fd44-90ea-4c7b-b5f2-e9ef62ec0b33" "ad77ccc8-56cf-4d1a-ab22-1f7b66962e1a"
-			"ae0b173e-f118-4db1-9f45-e621955768d0" "aeb93df1-edf3-4cee-8415-31382cd7990b"
-			"af24e5a8-4ae3-4119-a79e-51c175e9699a" "b948a1a2-8189-4185-9c3b-ce6a30d5d8ca"
-			"bb17f7bc-4075-4004-bed3-6cd7d3a8e732" "bee964f1-293b-4b72-bda7-ea8b71a3330c"
-			"c0823ec8-267d-4ec7-91d4-3dfb6ef8d654" "c0f657da-602d-42d4-961f-466f09d963fa"
-			"c2ded8c3-a82d-4ac2-a8c9-0af400dbc1bc" "c4865bfa-cf36-4527-b27d-a3fb9526a842"
-			"d8902471-e969-4991-b110-cf5f47aa5f6b" "d8b034c0-f25a-4399-b237-11b47a0bbc72"
-			"e1f5a8ed-18d2-4f57-a33d-d45cb1a46a1d" "e628c04f-682a-4e3c-88a1-776bf15304e1"
-			"ec0796f7-3811-42c9-882b-406ebec63e1c" "f0ea330d-c01b-4453-aac3-6b2941168b36"
-			"f590da70-bbb1-42b3-8524-9fba744b7021" "fb274188-82d5-4f0f-bdb5-af32571e8770"
-			"fb91ab35-a519-4b44-abed-a5c69920bcd8" "fded4cc7-2a02-432e-a35c-ff506edead41"
 		)
 	)
 	(group "07 Temperature harness"
